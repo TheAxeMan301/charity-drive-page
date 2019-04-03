@@ -8,19 +8,22 @@
         <i class="fas fa-info" /> About/FAQ
       </router-link>
       <a
-          v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/ui/donate/BBCB2018"
+        v-if="phase === 'live'"
+        href="https://tracker.tasbot.net/tracker/ui/donate/BBCB2018"
       >
         <i class="fas fa-donate" /> Donate
       </a>
-      <a v-if="phase !== 'live'" href="https://tracker.tasbot.net">Donation tracker</a>
+      <a
+        v-if="phase !== 'live'"
+        href="https://tracker.tasbot.net"
+      >Donation tracker</a>
     </nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'appHeader',
+  name: 'AppHeader',
   data () {
     return {
       phase: 'hype'

@@ -11,75 +11,6 @@ body {
 }
 
 /*
- *  Main
- */
-main {
-  margin: 0 auto;
-  width: 100%;
-}
-#stream {
-  width: 100%;
-  margin: 0 auto;
-  height: 0;
-  padding-bottom: 56.25%;
-  position: relative;
-  display: none;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-}
-h1 {
-  text-align: center;
-}
-
-/*
- * Countdown
- */
-#countdown {
-  width: 100%;
-  font-size: 3em;
-  text-align: center;
-  margin: 0.25em 0;
-
-  p {
-    font-size: 2rem;
-    margin: 0.2em;
-  }
-
-  span {
-    color: #fff;
-    margin: 0 0.1em;
-    position: relative;
-    background: #222;
-    padding: 0.1em;
-    border-radius: 0.2em;
-  }
-
-  span::after {
-    color: #ddd;
-    position: absolute;
-    left: 0;
-    bottom: -1.5em;
-    font-size: 0.375em;
-    width: 100%;
-  }
-}
-#countDays::after {
-  content: "days";
-}
-#countHours::after {
-  content: "hours";
-}
-#countMinutes::after {
-  content: "minutes";
-}
-#countSeconds::after {
-  content: "seconds";
-}
-/*
  * Information boxes
  */
 #about {
@@ -167,11 +98,6 @@ h2 {
  */
 
 @media only screen and (min-width: 800px) {
-  main {
-    margin: 0 auto;
-    max-width: 1280px;
-  }
-
   #about section {
     flex-basis: 50%;
   }
