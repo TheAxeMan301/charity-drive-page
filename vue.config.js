@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: undefined,
+  publicPath: '',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,

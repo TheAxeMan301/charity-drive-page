@@ -46,6 +46,15 @@ export default {
     color: #ddd;
     margin-bottom: 10px;
   }
+  a:link {
+    color: #ddd;
+  }
+  a:visited {
+    color: #ddd;
+  }
+  a:hover {
+    color: #fafafa;
+  }
 }
 
 </style>

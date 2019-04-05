@@ -140,7 +140,7 @@ main {
     color: #ddd;
   }
   a:hover {
-    color: #eee;
+    color: #fafafa;
   }
   img.desert-bus {
     flex: 0 0.5 auto;
