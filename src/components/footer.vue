@@ -20,7 +20,7 @@
 export default {
   name: 'AppFooter',
   data () {
-      return {}
+    return {}
   }
 }
 </script>

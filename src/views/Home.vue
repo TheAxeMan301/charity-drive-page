@@ -17,42 +17,80 @@
     </section>
 
     <section class="explain-about">
-      <img class="desert-bus" src="../assets/DesertBusYourDriverIs.png" />
+      <img
+        class="desert-bus"
+        src="../assets/DesertBusYourDriverIs.png"
+      >
       <div class="explain-div">
-        <p>The Desert Bus Charity Drive is a charity fundraising event benefitting the
-          <a href="https://nami.org/" target="_blank">National Alliance on Mental Illness
-          <i class="fas fa-external-link-alt fa-xs" /></a>
-           presented by
-          <a href="http://tas.bot" alt="TASBot the Perfectionist" title="TASBot" target="_blank">
-          Team TASBot<i class="fas fa-external-link-alt fa-xs" /></a>.</p>
-        <p>DwangoAC, TASBot and TheAxeMan will livestream their drive from Petaluma, CA to Salt
-          Lake City, UT where they will appear at the 
-          <a href="https://www.rpglimitbreak.com" target="_blank">
-          <img src="../assets/rpglb-logo_1200x424.png" height="20" />
-          RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
-          video game marathon.</p>
-        <p>Over the 14 hour trip viewers will be able to donate to control some systems of DwangoAC's
+        <p>
+          The Desert Bus Charity Drive is a charity fundraising event benefitting the
+          <a
+            href="https://nami.org/"
+            target="_blank"
+          >National Alliance on Mental Illness
+            <i class="fas fa-external-link-alt fa-xs" /></a>
+          presented by
+          <a
+            href="http://tas.bot"
+            alt="TASBot the Perfectionist"
+            title="TASBot"
+            target="_blank"
+          >
+            Team TASBot<i class="fas fa-external-link-alt fa-xs" /></a>.
+        </p>
+        <p>
+          DwangoAC, TASBot and TheAxeMan will livestream their drive from Petaluma, CA to Salt
+          Lake City, UT where they will appear at the
+          <a
+            href="https://www.rpglimitbreak.com"
+            target="_blank"
+          >
+            <img
+              src="../assets/rpglb-logo_1200x424.png"
+              height="20"
+            >
+            RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
+          video game marathon.
+        </p>
+        <p>
+          Over the 14 hour trip viewers will be able to donate to control some systems of DwangoAC's
           Tesla Model X. Donate to adjust the thermostat and tune in on
           <a href="https://www.twitch.tv/dwangoac"><i class="fab fa-twitch" /> Twitch</a>
-          to watch DwangoAC and TheAxeMan sweat or freeze.</p>
-          <img class="tesla-pic" src="../assets/tesla-model-x.png" height="100" />
+          to watch DwangoAC and TheAxeMan sweat or freeze.
+        </p>
+        <img
+          class="tesla-pic"
+          src="../assets/tesla-model-x.png"
+          height="100"
+        >
       </div>
     </section>
 
     <countdown />
 
     <p>Benefitting</p>
-    <a href="https://nami.org/" target="_blank"><img
-        src="../assets/nami_long_white.png"
-        height="200"
+    <a
+      href="https://nami.org/"
+      target="_blank"
+    ><img
+      src="../assets/nami_long_white.png"
+      height="200"
     ></a>
     <p>presented by</p>
-    <a href="http://tas.bot" alt="TASBot the Perfectionist" title="TASBot" target="_blank"><img
+    <a
+      href="http://tas.bot"
+      alt="TASBot the Perfectionist"
+      title="TASBot"
+      target="_blank"
+    ><img
       src="../assets/tasbot.png"
       height="200"
     ></a>
     <p>In association with</p>
-    <a href="https://www.rpglimitbreak.com" target="_blank"><img
+    <a
+      href="https://www.rpglimitbreak.com"
+      target="_blank"
+    ><img
       src="../assets/rpglb-logo_1200x424.png"
       height="200"
     ></a>
