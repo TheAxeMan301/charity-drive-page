@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Desert Bus Charity Drive</h1>
+    <h1>Desert Tesla Charity Drive</h1>
 
     <section
       class="stream"
@@ -19,11 +19,11 @@
     <section class="explain-about">
       <img
         class="desert-bus"
-        src="../assets/DesertBusYourDriverIs.png"
+        src="../assets/tesla-model-x.png"
       >
       <div class="explain-div">
         <p>
-          The Desert Bus Charity Drive is a charity fundraising event benefitting the
+          The Desert Tesla Charity Drive is a charity fundraising event benefitting the
           <a
             href="https://nami.org/"
             target="_blank"
@@ -58,11 +58,6 @@
           <a href="https://www.twitch.tv/dwangoac"><i class="fab fa-twitch" /> Twitch</a>
           to watch DwangoAC and TheAxeMan sweat or freeze.
         </p>
-        <img
-          class="tesla-pic"
-          src="../assets/tesla-model-x.png"
-          height="100"
-        >
       </div>
     </section>
 
