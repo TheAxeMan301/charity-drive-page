@@ -4,7 +4,7 @@
 You will need node.js for development. The recommended version is the latest 10.x release. A `.nvmrc` file has been included for use with [nvm] (https://github .com/creationix/nvm)
 ```
 npm install
-npm install -g vue-cli # for vue cli
+npm install -g @vue/cli # for vue cli - note that this is NOT the same as vue-cli, it is a newer version
 ```
 
 ### Vue cli

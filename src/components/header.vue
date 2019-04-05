@@ -14,7 +14,7 @@
         <i class="fas fa-donate" /> Donate
       </a>
       <a
-        v-if="phase !== 'live'"
+        v-if="phase === 'live'"
         href="https://tracker.tasbot.net"
       >Donation tracker</a>
     </nav>

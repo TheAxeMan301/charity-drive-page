@@ -36,7 +36,7 @@
             title="TASBot"
             target="_blank"
           >
-            Team TASBot<i class="fas fa-external-link-alt fa-xs" /></a>.
+            Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>.
         </p>
         <p>
           DwangoAC, TASBot and TheAxeMan will livestream their drive from Petaluma, CA to Salt
