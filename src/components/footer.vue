@@ -33,7 +33,7 @@ export default {
   background: #212121;
   background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  margin-bottom: 10px;
+  margin-bottom: 0;
 
   span.find-on {
     font-weight: bold;
@@ -44,6 +44,7 @@ export default {
   a {
     margin-left: 40px;
     color: #ddd;
+    margin-bottom: 10px;
   }
 }
 
