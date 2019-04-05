@@ -3,7 +3,6 @@ import Home from './views/Home'
 import About from './views/About'
 
 export default new VueRouter({
-  mode: 'history',
   routes: [{
     path: '/',
     name: 'home',
