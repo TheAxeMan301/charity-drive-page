@@ -4,8 +4,6 @@ import router from './router'
 import VueLogger from 'vuejs-logger'
 import 'core-js'
 
-import './styles/botbash.scss'
-
 const isProduction = process.env.NODE_ENV === 'production'
 
 Vue.config.productionTip = false

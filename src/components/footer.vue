@@ -39,12 +39,12 @@ export default {
     font-weight: bold;
     margin-bottom: 10px;
     margin-left: 20px;
-    display: block;
   }
   a {
     margin-left: 40px;
     color: #ddd;
     margin-bottom: 10px;
+    display: inline-block;
   }
   a:link {
     color: #ddd;
