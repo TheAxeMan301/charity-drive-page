@@ -125,15 +125,9 @@
 
 <script>
 import Countdown from '../components/countdown'
-import BContainer from 'bootstrap-vue/src/components/layout/container'
-import BCarousel from 'bootstrap-vue/src/components/carousel/carousel'
-import BCarouselSlide from 'bootstrap-vue/src/components/carousel/carousel-slide'
 export default {
   name: 'Home',
   components: {
-    BCarouselSlide,
-    BCarousel,
-    BContainer,
     Countdown
   },
   data () {
