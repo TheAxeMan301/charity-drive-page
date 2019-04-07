@@ -10,7 +10,7 @@
     <a href="https://twitter.com/MrTASBot">
       <i class="fab fa-twitter" /> Twitter
     </a>
-    <a href="discord.tasbot.net">
+    <a href="http://discord.tasbot.net">
       <i class="fab fa-discord" /> Discord
     </a>
   </div>
