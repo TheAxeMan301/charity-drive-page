@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <app-header />
+    <app-header :phase="phase" />
     <router-view class="main-view" />
     <app-footer class="footer" />
   </div>
@@ -17,7 +17,9 @@ export default {
     appFooter: Footer
   },
   data () {
-    return {}
+    return {
+      phase: 'hype'
+    }
   }
 }
 </script>

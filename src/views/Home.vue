@@ -85,14 +85,13 @@
               class="the-carousel"
               :interval="10000"
               controls
-              img-height="200"
             >
               <b-carousel-slide>
                 <img
                   slot="img"
                   class="d-block img-fluid carousel-image-link"
                   @click="openLinkNewTab('https://nami.org/')"
-                  src="../assets/nami_long_white.png"
+                  src="../assets/nami-logo-carousel.png"
                   alt="Benefiting NAMI"
                   height="200"
                 >
@@ -102,9 +101,8 @@
                   slot="img"
                   class="d-block img-fluid carousel-image-link"
                   @click="openLinkNewTab('https://tas.bot')"
-                  src="../assets/tasbot.png"
+                  src="../assets/tasbot-logo-carousel.png"
                   alt="Presented by Team TASBot"
-                  height="200"
                 >
               </b-carousel-slide>
               <b-carousel-slide>
@@ -112,7 +110,7 @@
                   slot="img"
                   class="d-block img-fluid carousel-image-link"
                   @click="openLinkNewTab('https://www.rpglimitbreak.com')"
-                  src="../assets/rpglb-logo_1200x424.png"
+                  src="../assets/rpglb-logo-carousel.png"
                   alt="Presented by Team TASBot"
                   height="200"
                 >
@@ -154,7 +152,7 @@ export default {
 
 <style scoped lang="scss">
 main {
-  margin: 0 auto 50px auto;
+  margin: 0 auto 30px auto;
   width: 100%;
 }
 .stream {
@@ -181,7 +179,6 @@ main {
   margin-bottom: 40px;
 }
 .the-carousel {
-  height: 210px;
 }
 .carousel-image-link {
   cursor: pointer;

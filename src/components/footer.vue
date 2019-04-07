@@ -28,7 +28,7 @@ export default {
 <style lang="scss" scoped>
 .footer {
   font-size: 1em;
-  padding: 1em;
+  padding: 1em 1em 0 1em;
   width: 100%;
   background: #212121;
   background: rgba(0, 0, 0, 0.5);
@@ -37,13 +37,13 @@ export default {
 
   span.find-on {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-left: 20px;
   }
   a {
     margin-left: 40px;
     color: #ddd;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: inline-block;
   }
   a:link {

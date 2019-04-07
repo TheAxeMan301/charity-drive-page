@@ -4,13 +4,15 @@
     v-if="showTimer"
   >
     <p>The event starts in:</p>
-    <span class="countDays">{{ dayCount }}</span>
-    :
-    <span class="countHours">{{ hourCount }}</span>
-    :
-    <span class="countMinutes">{{ minuteCount }}</span>
-    :
-    <span class="countSeconds">{{ secondCount }}</span>
+    <div class="actual-counter">
+      <span class="countDays">{{ dayCount }}</span>
+      :
+      <span class="countHours">{{ hourCount }}</span>
+      :
+      <span class="countMinutes">{{ minuteCount }}</span>
+      :
+      <span class="countSeconds">{{ secondCount }}</span>
+    </div>
   </section>
 </template>
 
@@ -70,7 +72,6 @@ export default {
 <style scoped lang="scss">
 .countdown {
   width: 100%;
-  font-size: 3em;
   text-align: center;
   margin: 0.25em 0;
 
@@ -78,14 +79,15 @@ export default {
     font-size: 2rem;
     margin: 0.2em;
   }
-
   span {
     color: #fff;
     margin: 0 0.1em;
     position: relative;
     background: #222;
+    font-size: 3em;
     padding: 0.1em;
     border-radius: 0.2em;
+    margin-bottom: 40px;
   }
   span::after {
     color: #ddd;
