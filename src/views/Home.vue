@@ -67,58 +67,58 @@
           </p>
         </b-col>
       </b-row>
+    </b-container>
 
-      <b-container
-        fluid
-        class="countdown-container"
-      >
-        <countdown />
-      </b-container>
+    <b-container
+      fluid
+      class="countdown-container"
+    >
+      <countdown />
+    </b-container>
 
-      <b-container>
-        <b-row>
-          <b-col
-            cols="8"
-            offset="2"
+    <b-container>
+      <b-row>
+        <b-col
+          cols="8"
+          offset="2"
+        >
+          <b-carousel
+            class="the-carousel"
+            :interval="10000"
+            controls
           >
-            <b-carousel
-              class="the-carousel"
-              :interval="10000"
-              controls
-            >
-              <b-carousel-slide>
-                <img
-                  slot="img"
-                  class="d-block img-fluid carousel-image-link"
-                  @click="openLinkNewTab('https://nami.org/')"
-                  src="../assets/nami-logo-carousel.png"
-                  alt="Benefiting NAMI"
-                  height="200"
-                >
-              </b-carousel-slide>
-              <b-carousel-slide>
-                <img
-                  slot="img"
-                  class="d-block img-fluid carousel-image-link"
-                  @click="openLinkNewTab('https://tas.bot')"
-                  src="../assets/tasbot-logo-carousel.png"
-                  alt="Presented by Team TASBot"
-                >
-              </b-carousel-slide>
-              <b-carousel-slide>
-                <img
-                  slot="img"
-                  class="d-block img-fluid carousel-image-link"
-                  @click="openLinkNewTab('https://www.rpglimitbreak.com')"
-                  src="../assets/rpglb-logo-carousel.png"
-                  alt="Presented by Team TASBot"
-                  height="200"
-                >
-              </b-carousel-slide>
-            </b-carousel>
-          </b-col>
-        </b-row>
-      </b-container>
+            <b-carousel-slide>
+              <img
+                slot="img"
+                class="d-block img-fluid carousel-image-link"
+                @click="openLinkNewTab('https://nami.org/')"
+                src="../assets/nami-logo-carousel.png"
+                alt="Benefiting NAMI"
+                height="200"
+              >
+            </b-carousel-slide>
+            <b-carousel-slide>
+              <img
+                slot="img"
+                class="d-block img-fluid carousel-image-link"
+                @click="openLinkNewTab('https://tas.bot')"
+                src="../assets/tasbot-logo-carousel.png"
+                alt="Presented by Team TASBot"
+              >
+            </b-carousel-slide>
+            <b-carousel-slide>
+              <img
+                slot="img"
+                class="d-block img-fluid carousel-image-link"
+                @click="openLinkNewTab('https://www.rpglimitbreak.com')"
+                src="../assets/rpglb-logo-carousel.png"
+                alt="Presented by Team TASBot"
+                height="200"
+              >
+            </b-carousel-slide>
+          </b-carousel>
+        </b-col>
+      </b-row>
     </b-container>
   </main>
 </template>

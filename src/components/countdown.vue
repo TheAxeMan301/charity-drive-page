@@ -75,6 +75,9 @@ export default {
   text-align: center;
   margin: 0.25em 0;
 
+  .actual-counter {
+    white-space: nowrap;
+  }
   p {
     font-size: 2rem;
     margin: 0.2em;
