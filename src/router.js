@@ -3,7 +3,8 @@ import Home from './views/Home'
 import About from './views/About'
 
 export default new VueRouter({
-  // mode: 'history',
+  mode: 'history',
+  base: '/desert-tesla',
   routes: [{
     path: '/',
     name: 'home',

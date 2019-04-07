@@ -1,6 +1,5 @@
 module.exports = {
-  // publicPath: '/desert-tesla',
-  publicPath: '',
+  publicPath: '/desert-tesla',
   outputDir: undefined,
   assetsDir: undefined,
   runtimeCompiler: undefined,
