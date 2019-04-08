@@ -93,6 +93,15 @@
             on May 4 from 8 AM PST until about 10 PM PST!
           </p>
           <h3 class="faq-question">
+            What about safety?
+          </h3>
+          <p class="faq-answer">
+            The Crowd Control incentives will have safety limits built in.
+            For example the minimum speed will not be able to go below the 55 mph mark.
+            If donation incentives are somehow still able to make an unsafe situation we
+            reserve the right to stop any actions.
+          </p>
+          <h3 class="faq-question">
             How is this related to speedrunning?
           </h3>
           <p class="faq-answer">
