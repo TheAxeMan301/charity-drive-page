@@ -87,7 +87,7 @@
           <p class="faq-answer">
             Tune in to dwangoAC's Twitch stream at
             <a href="https://twitch.tv/dwangoAC">
-              <i class="fab fa-twitch" /> Twitch
+              <i class="fab fa-twitch" />
               https://twitch.tv/dwangoAC
             </a>
             on May 4 from 8 AM PST until about 10 PM PST!
