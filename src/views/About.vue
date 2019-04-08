@@ -7,7 +7,7 @@
             md="4"
             class="float-right d-md-inline float-image-col"
           >
-            <!--<img
+            <img
               src="../assets/DesertBusYourDriverIs.png"
               class="d-block img-fluid"
             >
