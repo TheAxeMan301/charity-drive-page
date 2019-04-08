@@ -40,4 +40,13 @@ body {
 #app {
   min-height: 100%;
 }
+a:link {
+  color: #ddd;
+}
+a:visited {
+  color: #ddd;
+}
+a:hover {
+  color: #fafafa;
+}
 </style>

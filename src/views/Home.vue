@@ -53,7 +53,7 @@
               target="_blank"
             >
               <img
-                src="../assets/rpglb-logo_1200x424.png"
+                src="../assets/rpglb-logo-carousel.png"
                 height="20"
               >
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
