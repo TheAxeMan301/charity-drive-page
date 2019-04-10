@@ -22,9 +22,12 @@
             abilities, usually leading to game breaking glitches in front of live audiences.
             dwangoAC (Allan Cecil) is TASBot’s owner and creator. For this trip they are
             joined by TheAxeMan (Frank Amoroso), a long-time TAS author making his first
-            marathon appearance. You can talk to the tasbot crew in their
-            <a href="https://discord.gg/3HPhwub">
-              discord <i class="fas fa-external-link-alt fa-xs" />
+            marathon appearance. You can talk to the tasbot crew on
+            <a
+              class="icon-link"
+              href="https://discord.gg/3HPhwub"
+            >
+              <i class="fab fa-discord fa-xs" /> Discord
             </a>
           </p>
           <h3 class="faq-question">
@@ -33,6 +36,7 @@
           <p class="faq-answer">
             All revenue from donations, bits, and subscribers will be donated to the
             <a
+              class="icon-link"
               href="https://nami.org/"
               target="_blank"
             >
@@ -49,6 +53,7 @@
             Saturday, May 4 in dwangoAC’s Tesla Model X. The 14 hour trip will take them to
             the Salt Lake City, UT site of RPG Limit Break. Thanks to
             <a
+              class="icon-link"
               href="https://crowdcontrol.live/"
               target="_blank"
             >
@@ -71,6 +76,7 @@
           <p class="faq-answer">
             The TASBot team has worked with
             <a
+              class="icon-link"
               href="https://crowdcontrol.live/"
               target="_blank"
             >
@@ -86,7 +92,10 @@
           </h3>
           <p class="faq-answer">
             Tune in to dwangoAC's Twitch stream at
-            <a href="https://twitch.tv/dwangoAC">
+            <a
+              class="icon-link"
+              href="https://twitch.tv/dwangoAC"
+            >
               <i class="fab fa-twitch" />
               https://twitch.tv/dwangoAC
             </a>

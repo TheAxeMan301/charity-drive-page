@@ -4,19 +4,42 @@
     type="dark"
     class="whole-nav"
   >
-    <b-navbar-toggle target="nav-text-collapse" />
+    <b-navbar-toggle target="nav-text-collapse">
+      <b-navbar-toggle
+        target="nav-text-collapse"
+        disabled
+      />
+      Find TASBot on
+    </b-navbar-toggle>
 
     <b-collapse
       id="nav-text-collapse"
       is-nav
     >
       <b-navbar-nav class="top-navbar-nav">
-        <b-nav-item to="/">
-          <i class="fas fa-home" />
+        <b-navbar-brand>
+          Find TASBot on
+        </b-navbar-brand>
+        <b-nav-item href="https://www.youtube.com/dwangoac">
+          <i class="fab fa-youtube" /> YouTube
         </b-nav-item>
-        <b-nav-item to="/about">
-          <i class="fas fa-info" /> About/FAQ
+        <b-nav-item href="https://www.twitch.tv/dwangoac">
+          <i class="fab fa-twitch" /> Twitch
         </b-nav-item>
+        <b-nav-item href="https://twitter.com/MrTASBot">
+          <i class="fab fa-twitter" /> Twitter
+        </b-nav-item>
+        <b-nav-item href="http://discord.tasbot.net">
+          <i class="fab fa-discord" /> Discord
+        </b-nav-item>
+        <b-nav-item href="http://tasvideos.org/TASBot.html">
+          <i class="fas fa-external-link-alt" /> TASVideos
+        </b-nav-item>
+        <b-nav-item href="https://gdqvods.com/category/tool-assisted-speedruns/">
+          <i class="far fa-play-circle" /> GDQVods
+        </b-nav-item>
+        <!-- TODO: Where will donation tracker go when we are live?
+        Probably a good idea to put it somewhere besides the header. -->
         <b-nav-item
           v-if="phase === 'live'"
           href="https://tracker.tasbot.net/tracker/ui/donate/BBCB2018"
@@ -35,8 +58,11 @@
 </template>
 
 <script>
+import BNavbarBrand from 'bootstrap-vue/src/components/navbar/navbar-brand'
+import BNavItem from 'bootstrap-vue/src/components/nav/nav-item'
 export default {
   name: 'Header',
+  components: { BNavItem, BNavbarBrand },
   props: {
     phase: {
       type: String,
@@ -57,7 +83,7 @@ ul.navbar-nav.top-navbar-nav {
 
   li.nav-item {
     margin-right: 10px;
-    margin-left: 10px;
+    white-space: nowrap;
   }
 }
 }

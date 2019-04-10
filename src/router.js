@@ -4,7 +4,7 @@ import About from './views/About'
 
 export default new VueRouter({
   mode: 'history',
-  base: '/desert-tesla',
+  base: '/',
   routes: [{
     path: '/',
     name: 'home',

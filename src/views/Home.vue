@@ -100,8 +100,7 @@
             <b-carousel-slide>
               <img
                 slot="img"
-                class="d-block img-fluid carousel-image-link"
-                @click="openLinkNewTab('https://tas.bot')"
+                class="d-block img-fluid"
                 src="../assets/tasbot-logo-carousel.png"
                 alt="Presented by Team TASBot"
               >
@@ -120,15 +119,17 @@
         </b-col>
       </b-row>
     </b-container>
+    <About />
   </main>
 </template>
 
 <script>
 import Countdown from '../components/countdown'
+import About from '../views/About'
 export default {
   name: 'Home',
   components: {
-    Countdown
+    Countdown, About
   },
   data () {
     return {
@@ -173,6 +174,7 @@ main {
   margin-bottom: 40px;
 }
 .the-carousel {
+  margin-bottom: 20px;
 }
 .carousel-image-link {
   cursor: pointer;
