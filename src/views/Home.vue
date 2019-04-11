@@ -46,7 +46,7 @@
               Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>.
           </p>
           <p>
-            DwangoAC, TASBot and TheAxeMan will livestream their drive from Petaluma, CA to Salt
+            TASBot, dwangoAC, and TheAxeMan will livestream their drive from Petaluma, CA to Salt
             Lake City, UT where they will appear at the
             <a
               href="https://www.rpglimitbreak.com"
@@ -60,10 +60,10 @@
             video game marathon.
           </p>
           <p>
-            Over the 14 hour trip viewers will be able to donate to control some systems of DwangoAC's
-            Tesla Model X. Donate to adjust the thermostat and tune in on
+            Over the 14 hour trip viewers will be able to donate to control some systems of dwangoAC's
+            Tesla Model X 100D. Donate to adjust the thermostat and tune in here or on
             <a href="https://www.twitch.tv/dwangoac"><i class="fab fa-twitch" /> Twitch</a>
-            to watch DwangoAC and TheAxeMan sweat or freeze.
+            to watch dwangoAC and TheAxeMan sweat or freeze.
           </p>
         </b-col>
       </b-row>
