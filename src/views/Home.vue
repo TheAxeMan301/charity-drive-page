@@ -44,9 +44,7 @@
           <p>
             Presented by
             <a
-              href="http://tas.bot"
-              alt="TASBot the Perfectionist"
-              title="TASBot"
+              href="http://tas.bot/"
               target="_blank"
             >
               Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
