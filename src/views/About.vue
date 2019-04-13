@@ -13,45 +13,12 @@
             >
           </b-col>-->
           <h3 class="faq-question">
-            I'm new, who are dwangoAC and TASBot?
-          </h3>
-          <p class="faq-answer">
-            TASBot is best described as a special R.O.B. robot outfitted with Legos to hold a
-            custom circuit board that can exactly mimic the behavior of a video game
-            controller. TASBot can play games on real video game consoles with superhuman
-            abilities, usually leading to game breaking glitches in front of live audiences.
-            dwangoAC (Allan Cecil) is TASBot’s owner and creator. For this trip they are
-            joined by TheAxeMan (Frank Amoroso), a long-time TAS author making his first
-            marathon appearance. You can talk to the tasbot crew on
-            <a
-              class="icon-link"
-              href="https://discord.gg/3HPhwub"
-            >
-              <i class="fab fa-discord fa-xs" /> Discord
-            </a>
-          </p>
-          <h3 class="faq-question">
-            What is the stream supporting?
-          </h3>
-          <p class="faq-answer">
-            All revenue from donations, bits, and subscribers will be donated to the
-            <a
-              class="icon-link"
-              href="https://nami.org/"
-              target="_blank"
-            >
-              National Alliance on Mental Illness
-              <i class="fas fa-external-link-alt fa-xs" />
-            </a>.
-            NAMI is RPG Limit Break's chosen charity.
-          </p>
-          <h3 class="faq-question">
             What is this stream about?
           </h3>
           <p class="faq-answer">
-            DwangoAC, TheAxeMan and TASBot will depart from Petaluma, CA on the morning of
-            Saturday, May 4 in dwangoAC’s Tesla Model X. The 14 hour trip will take them to
-            the Salt Lake City, UT site of RPG Limit Break. Thanks to
+            TASBot, dwangoAC, and TheAxeMan will depart from Petaluma, CA on the morning of
+            Saturday, May 4 in dwangoAC’s Tesla Model X 100D. The 14 hour trip will take them
+            to the Salt Lake City, UT site of RPG Limit Break while viewers use
             <a
               class="icon-link"
               href="https://crowdcontrol.live/"
@@ -60,15 +27,52 @@
               Crowd Control
               <i class="fas fa-external-link-alt fa-xs" />
             </a>
-            and the TASBot team, viewers will be able to control
-            some systems of the car during the drive. Tesla Autopilot will be used when
-            possible and proper safety rules will be followed.
+            to control some systems of the car during the drive and donate toward various
+            incentives. Tesla Autopilot will be used whenever possible and proper safety
+            rules will be followed.
+          </p>
+          <h3 class="faq-question">
+            What is the stream supporting?
+          </h3>
+          <p class="faq-answer">
+            All revenue from donations, bits, and subscriptions on May 4th will be donated
+            to NAMI 
+            (<a
+              class="icon-link"
+              href="https://nami.org/"
+              target="_blank"
+            >
+              National Alliance on Mental Illness
+              <i class="fas fa-external-link-alt fa-xs" />
+            </a>).
+            NAMI is also RPG Limit Break's chosen charity and we are coordinating with them.
+          </p>
+          <h3 class="faq-question">
+            I'm new, who are dwangoAC and TASBot?
+          </h3>
+          <p class="faq-answer">
+            TASBot is best described as an indivdual who holds replay devices and aprticiptes
+            in his favorite pastime of playing video games on real hardware. TASBot is in the
+            care of his creator and longtime keeper, dwangoAC.
+            dwangoAC is the President of the North Bay Linux Users' Group as well as a YouTube
+            and Twitch Partner who streams TASBot content on a regular basis.
+            TheAxeMan is a long-time TAS author making his first marathon appearance, showing
+            off his run of Final Fantasy at RPG Limit Break. You can find the tasbot crew on
+            <a
+              class="icon-link"
+              href="https://discord.gg/3HPhwub"
+            >
+              <i class="fab fa-discord fa-xs" />Discord
+            </a>
           </p>
           <h3 class="faq-question">
             When is this going to happen?
           </h3>
           <p class="faq-answer">
-            The plan is to start at 8 AM PST on Saturday May 4.
+            The plan is to start at 8 AM PST on Saturday May 4 from the Petaluma, CA Tesla
+            Supercharger station and drive straight through to Salt Lake City, UT with a
+            substantial portion of their journey occurring in the Nevada desert, hence the 
+            name.
           </p>
           <h3 class="faq-question">
             How can you interact with the stream?
@@ -83,15 +87,15 @@
               Crowd Control
               <i class="fas fa-external-link-alt fa-xs" />
             </a>
-            to allow you to control the Tesla directly!
-            Donating money or bits will allow you to change music,
-            temperature, top speed and more!
+            to allow you to control various features of the Tesla directly!
+            Donating money or bits will allow you to temperature, vehicle maximum speed,
+            and several other features!
           </p>
           <h3 class="faq-question">
             Where can I watch the stream?
           </h3>
           <p class="faq-answer">
-            Tune in to dwangoAC's Twitch stream at
+            Tune in on this page or on dwangoAC's Twitch stream at
             <a
               class="icon-link"
               href="https://twitch.tv/dwangoAC"
@@ -99,43 +103,50 @@
               <i class="fab fa-twitch" />
               https://twitch.tv/dwangoAC
             </a>
-            on May 4 from 8 AM PST until about 10 PM PST!
+            on May 4 from 8 AM PST until they arrive some 14 hours later!
           </p>
           <h3 class="faq-question">
             What about safety?
           </h3>
           <p class="faq-answer">
-            The Crowd Control incentives will have safety limits built in.
-            For example the minimum speed will not be able to go below the 55 mph mark.
-            If donation incentives are somehow still able to make an unsafe situation we
-            reserve the right to stop any actions.
-          </p>
+            The Crowd Control incentives will have safety limits built in. Changes to max
+            speed will only be made while the vehicle is parked and will not allow any unsafe
+            speeds at any time. All donation incentives and effects that can be triggered
+            using Crowd Control all have limits in place to ensure safety. If for any reason
+            there is a concern about the health and safety of anyone we reserve the right to
+            cancel an effect or modify it. Raising money for a good cause is our second highest
+            priority behind safety.
+</p>
           <h3 class="faq-question">
             How is this related to speedrunning?
           </h3>
           <p class="faq-answer">
-            The remote Tesla controls come from Crowd Control which is primarily
-            focused on gaming and speedrunning.
-            TASBot, while not speedrunning any game, will also be in the car.
-            TheAxeMan is also looking forward to getting a few runs in while dwangoAC drives.
+            The remote Tesla controls come from Crowd Control which is primarily focused on
+            gaming and speedrunning. TASBot, while not speedrunning any game, will also be
+            in the car along for the ride. TheAxeMan is also looking forward to performing some
+            speedrunning along the way and dwangoAC may even try to do some LttP rando.
           </p>
           <h3 class="faq-question">
-            Why are you taking donations for equipment?
+            Are you taking donations for equipment?
           </h3>
           <p class="faq-answer">
-            100% of stream revenue and donations for the day of this event will be donated
-            to NAMI.
-            However, keeping TASBot going isn't cheap. dwangoAC has personally spent over $12,000
-            on equipment and travel costs.
-            Stream and donation revenue outside of events helps to offset these costs.
-            From those proceeds dwangoAC always donates a portion directly to charity.
+            100% of stream revenue and donations for the day of the event will be donated
+            to NAMI. However, the general upkeep of TASBot and parts for this particular event
+            in particular are not cheap. dwangoAC has personally spent over $12,000 on equipment
+            and travel costs during past events. If you would like to help offset some of the
+            expenses for the trip please join us on Discord and ask how you can help. We're
+            generally relying on donations from within our community to cover expenses for this
+            trip to ensure that 100% of all donations can go directly to charity.
           </p>
           <h3 class="faq-question">
-            Are you taking this idea from Desert Bus?
+            Is this the same as Desert Bus for HOPE?
           </h3>
           <p class="faq-answer">
-            Desert Bus For Hope was a big inspiration for this event.
-            Our event will be longer and there will be incentives to donate.
+            Desert Bus For HOPE was a big inspiration for this event but is a very different
+            model, and also a different part of the Nevada desert. Our event is a single day
+            and a single one-way trip but with a longer journey (14+ hours instead of 8). This
+            event is also very different for one other reason - we're in an actual car, on an
+            actual interstate.
           </p>
         </b-col>
       </b-row>
