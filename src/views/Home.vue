@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Desert Tesla Charity Drive</h1>
+    <h1>Desert Tesla Charity Drive - May 4th, 2019</h1>
 
     <b-container
       fluid
@@ -30,24 +30,27 @@
           class="explain-text"
         >
           <p>
-            The Desert Tesla Charity Drive is a charity fundraising event benefiting the
+            On May 4th, make dwangoAC and TheAxeMan melt or freeze as you control
+            the temperature and other features of a Tesla Model X during a 14+ hour
+            livestream from Petaluma, CA to Salt Lake City, UT in a (literal) charity
+            drive benefiting the
             <a
               href="https://nami.org/"
               target="_blank"
             >National Alliance on Mental Illness
               <i class="fas fa-external-link-alt fa-xs" /></a>
-            presented by
+            (NAMI).
+          </p>
+          <p>
+            Presented by
             <a
               href="http://tas.bot"
               alt="TASBot the Perfectionist"
               title="TASBot"
               target="_blank"
             >
-              Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>.
-          </p>
-          <p>
-            TASBot, dwangoAC, and TheAxeMan will livestream their drive from Petaluma, CA to Salt
-            Lake City, UT where they will appear at the
+              Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
+             this inagural event aims to deliver the vehicle and all passengers safely to 
             <a
               href="https://www.rpglimitbreak.com"
               target="_blank"
@@ -57,13 +60,10 @@
                 height="20"
               >
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
-            video game marathon.
-          </p>
-          <p>
-            Over the 14 hour trip viewers will be able to donate to control some systems of dwangoAC's
-            Tesla Model X 100D. Donate to adjust the thermostat and tune in here or on
-            <a href="https://www.twitch.tv/dwangoac"><i class="fab fa-twitch" /> Twitch</a>
-            to watch dwangoAC and TheAxeMan sweat or freeze.
+            with no concern for human trappings like comfort. You'll
+            be able to watch the entire event along with great music and several other surprises
+            here at this site (TAS.Bot) as an embedded stream to
+            <a href="https://www.Twitch.tv/dwangoAC"><i class="fab fa-twitch" />Twitch.tv/dwangoAC</a>.
           </p>
         </b-col>
       </b-row>
