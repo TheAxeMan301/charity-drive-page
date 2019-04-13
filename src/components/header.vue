@@ -58,11 +58,9 @@
 </template>
 
 <script>
-import BNavbarBrand from 'bootstrap-vue/src/components/navbar/navbar-brand'
-import BNavItem from 'bootstrap-vue/src/components/nav/nav-item'
 export default {
   name: 'Header',
-  components: { BNavItem, BNavbarBrand },
+  components: {},
   props: {
     phase: {
       type: String,

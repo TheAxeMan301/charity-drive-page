@@ -1,8 +1,9 @@
+import '@babel/polyfill'
+import 'core-js'
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import VueLogger from 'vuejs-logger'
-import 'core-js'
 
 const isProduction = process.env.NODE_ENV === 'production'
 

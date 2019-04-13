@@ -50,7 +50,7 @@
               target="_blank"
             >
               Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
-             this inagural event aims to deliver the vehicle and all passengers safely to 
+            this inagural event aims to deliver the vehicle and all passengers safely to
             <a
               href="https://www.rpglimitbreak.com"
               target="_blank"
