@@ -36,7 +36,7 @@
           </h3>
           <p class="faq-answer">
             All revenue from donations, bits, and subscriptions on May 4th will be donated
-            to NAMI 
+            to NAMI
             (<a
               class="icon-link"
               href="https://nami.org/"
@@ -51,7 +51,7 @@
             I'm new, who are dwangoAC and TASBot?
           </h3>
           <p class="faq-answer">
-            TASBot is best described as an indivdual who holds replay devices and aprticiptes
+            TASBot is best described as an individual who holds replay devices and participates
             in his favorite pastime of playing video games on real hardware. TASBot is in the
             care of his creator and longtime keeper, dwangoAC.
             dwangoAC is the President of the North Bay Linux Users' Group as well as a YouTube
@@ -71,7 +71,7 @@
           <p class="faq-answer">
             The plan is to start at 8 AM PST on Saturday May 4 from the Petaluma, CA Tesla
             Supercharger station and drive straight through to Salt Lake City, UT with a
-            substantial portion of their journey occurring in the Nevada desert, hence the 
+            substantial portion of their journey occurring in the Nevada desert, hence the
             name.
           </p>
           <h3 class="faq-question">
@@ -116,7 +116,7 @@
             there is a concern about the health and safety of anyone we reserve the right to
             cancel an effect or modify it. Raising money for a good cause is our second highest
             priority behind safety.
-</p>
+          </p>
           <h3 class="faq-question">
             How is this related to speedrunning?
           </h3>
@@ -132,9 +132,16 @@
           <p class="faq-answer">
             100% of stream revenue and donations for the day of the event will be donated
             to NAMI. However, the general upkeep of TASBot and parts for this particular event
-            in particular are not cheap. dwangoAC has personally spent over $12,000 on equipment
-            and travel costs during past events. If you would like to help offset some of the
-            expenses for the trip please join us on Discord and ask how you can help. We're
+            in particular are not cheap. To date dwangoAC has personally spent over $12,000 on
+            equipment and travel costs during past events. If you would like to help offset some
+            of the expenses for the trip please join us on
+            <a
+              class="icon-link"
+              href="https://discord.gg/3HPhwub"
+            >
+              <i class="fab fa-discord fa-xs" />Discord
+            </a>
+            and ask how you can help. We're
             generally relying on donations from within our community to cover expenses for this
             trip to ensure that 100% of all donations can go directly to charity.
           </p>
