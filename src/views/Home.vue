@@ -107,9 +107,19 @@
               <img
                 slot="img"
                 class="d-block img-fluid carousel-image-link"
+                @click="openLinkNewTab('https://crowdcontrol.live/')"
+                src="../assets/crowd-control-logo-carousel.png"
+                alt="Crowd Control"
+                height="200"
+              >
+            </b-carousel-slide>
+            <b-carousel-slide>
+              <img
+                slot="img"
+                class="d-block img-fluid carousel-image-link"
                 @click="openLinkNewTab('https://www.rpglimitbreak.com')"
                 src="../assets/rpglb-logo-carousel.png"
-                alt="Presented by Team TASBot"
+                alt="RPG Limit Break"
                 height="200"
               >
             </b-carousel-slide>
