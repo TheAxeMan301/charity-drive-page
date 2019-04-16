@@ -35,8 +35,8 @@
             What is the stream supporting?
           </h3>
           <p class="faq-answer">
-            All revenue from donations, bits, and subscriptions on May 4th will be donated
-            to NAMI
+            All donations and all proceeds from Twitch bits and subscriptions on May 4th
+            will be donated to NAMI
             (<a
               class="icon-link"
               href="https://nami.org/"
@@ -45,7 +45,17 @@
               National Alliance on Mental Illness
               <i class="fas fa-external-link-alt fa-xs" />
             </a>).
-            NAMI is also RPG Limit Break's chosen charity and we are coordinating with them.
+            NAMI is also RPG Limit Break's chosen charity and we are coordinating with both
+            organizations for this event.
+          </p>
+          <h3 class="faq-question">
+            When is this going to happen?
+          </h3>
+          <p class="faq-answer">
+            The plan is to start at 8 AM PST on Saturday May 4 from the Petaluma, CA Tesla
+            Supercharger station and drive straight through to Salt Lake City, UT with a
+            substantial portion of their journey occurring in the Nevada desert, hence the
+            name.
           </p>
           <h3 class="faq-question">
             I'm new, who are dwangoAC and TASBot?
@@ -66,16 +76,7 @@
             </a>
           </p>
           <h3 class="faq-question">
-            When is this going to happen?
-          </h3>
-          <p class="faq-answer">
-            The plan is to start at 8 AM PST on Saturday May 4 from the Petaluma, CA Tesla
-            Supercharger station and drive straight through to Salt Lake City, UT with a
-            substantial portion of their journey occurring in the Nevada desert, hence the
-            name.
-          </p>
-          <h3 class="faq-question">
-            How can you interact with the stream?
+            How can I interact with the stream?
           </h3>
           <p class="faq-answer">
             The TASBot team has worked with
@@ -88,8 +89,8 @@
               <i class="fas fa-external-link-alt fa-xs" />
             </a>
             to allow you to control various features of the Tesla directly!
-            Donating money or bits will allow you to temperature, vehicle maximum speed,
-            and several other features!
+            Donating money or bits will allow you to control the cabin temperature, vehicle
+            maximum speed, and several other features!
           </p>
           <h3 class="faq-question">
             Where can I watch the stream?
@@ -104,6 +105,14 @@
               https://twitch.tv/dwangoAC
             </a>
             on May 4 from 8 AM PST until they arrive some 14 hours later!
+          </p>
+          <h3 class="faq-question">
+            Who came up with this crazy idea?
+          </h3>
+          <p class="faq-answer">
+            The idea was hatched by dwangoAC and was originally planned to be a stunt as part
+            of a Desert Bus for HOPE fundraiser (see more, below). This is a new concept and
+            these ideas may be too crazy but we won't know until we try.
           </p>
           <h3 class="faq-question">
             What about safety?
@@ -127,11 +136,25 @@
             speedrunning along the way and dwangoAC may even try to do some LttP rando.
           </p>
           <h3 class="faq-question">
-            Are you taking donations for equipment?
+            What is Twitch and what are bits and subscriptions?
+          </h3>
+          <p class="faq-answer">
+            Twitch is an online video and streaming service from Amazon that has a focus on
+            live, streaming content (whereas YouTube has a focus on prerecorded content). Twitch
+            allows streamers (content creators who use the platform to broadcast live video) to
+            receive money through what they call Subscriptions, a roughly $5 a month subscription
+            with the revenue split between the streamer and Twitch / Amazon. In addition, Twitch has
+            what are called "bits" which can be purchased and used to cheer streamers on or engage
+            with them in various other ways. Bits are not a monetary instrument but represent,
+            effectively, 1 cent per bit when given to a streamer. For the purposes of this event,
+            dwangoAC will be donating his portion of subscriptions as well as all revenue from bits.
+          </p>
+          <h3 class="faq-question">
+            Are you taking personal donations for equipment?
           </h3>
           <p class="faq-answer">
             100% of stream revenue and donations for the day of the event will be donated
-            to NAMI. However, the general upkeep of TASBot and parts for this particular event
+            to NAMI. However, the general upkeep of TASBot and equipment for this particular event
             in particular are not cheap. To date dwangoAC has personally spent over $12,000 on
             equipment and travel costs during past events. If you would like to help offset some
             of the expenses for the trip please join us on
@@ -143,7 +166,7 @@
             </a>
             and ask how you can help. We're
             generally relying on donations from within our community to cover expenses for this
-            trip to ensure that 100% of all donations can go directly to charity.
+            trip to ensure that 100% of all donations the day of the event go directly to charity.
           </p>
           <h3 class="faq-question">
             Is this the same as Desert Bus for HOPE?
