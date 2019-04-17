@@ -82,8 +82,9 @@
         >
           <b-carousel
             class="the-carousel"
-            :interval="10000"
+            :interval="carouselInterval"
             controls
+            @sliding-end="onCarouselSlideEnd"
           >
             <b-carousel-slide>
               <img
@@ -141,13 +142,19 @@ export default {
   },
   data () {
     return {
-      phase: 'hype'
+      phase: 'hype',
+      carouselInterval: 10000
     }
   },
   methods: {
     openLinkNewTab (url) {
       let win = window.open(url, '_blank')
       win.focus()
+    },
+    onCarouselSlideEnd (slideNumber) {
+      if (slideNumber === 0) {
+        this.carouselInterval = 0
+      }
     }
   }
 }
