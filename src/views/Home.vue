@@ -36,6 +36,10 @@
               href="https://crowdcontrol.live/"
               target="_blank"
             >
+              <img
+                src="../assets/crowd-control-logo-wrench-small.png"
+                height="20"
+              >
               Crowd Control
               <i class="fas fa-external-link-alt fa-xs" />
             </a>
@@ -66,18 +70,20 @@
               >
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
             will allow you to:
-            <br> - Increase or decrease the car's internal temperature to
-            potentially uncomfortable (but not dangerous) levels
-            <br> - Increase or decrease the volume of the music playing in the
-            car
-            <br> - Skip the current song
-            <br> - Honk the horn while stopped (for a rather hefty donation)
-            <br> - While stopped, set our maximum speed for the next driving
-            segment (between -4 and +4 of the max limit on the route)
-            <br> - Donate to an incentive to enable Emissions Testing Mode (
-             make the car emit human, uh, "emissions" noises on turn signals)
-            <br> - Donate to an incentive to make the car dance to music at
-            the next stop
+            <ul>
+            <li>Increase or decrease the car's internal temperature to
+            potentially uncomfortable (but not dangerous) levels</li>
+            <li>Increase or decrease the volume of the music playing in the
+            car</li>
+            <li>Skip the current song</li>
+            <li>Honk the horn while stopped (for a rather hefty donation)</li>
+            <li>While stopped, set our maximum speed for the next driving
+            segment (between -4 and +4 mph of the max limit on the route)</li>
+            <li>Donate to an incentive to enable Emissions Testing Mode (
+             make the car emit human, uh, "emissions" noises on turn signals)</li>
+            <li>Donate to an incentive to make the car dance to music at
+            the next stop</li>
+            </ul>
           </p>
         </b-col>
       </b-row>
