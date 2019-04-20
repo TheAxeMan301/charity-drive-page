@@ -30,16 +30,27 @@
           class="explain-text"
         >
           <p>
-            On May 4th, make dwangoAC and TheAxeMan melt or freeze as you control
-            the temperature and other features of a Tesla Model X during a 14+ hour
-            livestream from Petaluma, CA to Salt Lake City, UT in a (literal) charity
-            drive benefiting the
+            On May 4th, make dwangoAC melt or TheAxeMan freeze using
             <a
+              class="icon-link"
+              href="https://crowdcontrol.live/"
+              target="_blank"
+            >
+              <img
+                src="../assets/crowd-control-logo-wrench-small.png"
+                height="20"
+              >
+              Crowd Control
+              <i class="fas fa-external-link-alt fa-xs" />
+            </a>
+            to hack the comfort features of a Tesla Model X during a 14+ hour desert
+            livestream from Petaluma, CA to Salt Lake City, UT in a (literal) charity drive
+            benefiting NAMI
+            (<a
               href="https://nami.org/"
               target="_blank"
             >National Alliance on Mental Illness
-              <i class="fas fa-external-link-alt fa-xs" /></a>
-            (NAMI).
+              <i class="fas fa-external-link-alt fa-xs" /></a>).
           </p>
           <p>
             Presented by
@@ -48,7 +59,7 @@
               target="_blank"
             >
               Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
-            this inaugural event aims to deliver the vehicle and all passengers safely to
+            this inaugural event on the way to
             <a
               href="https://www.rpglimitbreak.com"
               target="_blank"
@@ -58,10 +69,21 @@
                 height="20"
               >
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
-            with no concern for human trappings like comfort. You'll
-            be able to watch the entire event along with great music and several other surprises
-            here at this site (TAS.Bot) as an embedded stream to
-            <a href="https://www.Twitch.tv/dwangoAC"><i class="fab fa-twitch" />Twitch.tv/dwangoAC</a>.
+            will allow you to:
+            <ul>
+            <li>Increase or decrease the car's internal temperature to
+            potentially uncomfortable (but not dangerous) levels</li>
+            <li>Increase or decrease the volume of the music playing in the
+            car</li>
+            <li>Skip the current song</li>
+            <li>Honk the horn while stopped (for a rather hefty donation)</li>
+            <li>While stopped, set our maximum speed for the next driving
+            segment (between -4 and +4 mph of the max limit on the route)</li>
+            <li>Donate to an incentive to enable Emissions Testing Mode (
+             make the car emit human, uh, "emissions" noises on turn signals)</li>
+            <li>Donate to an incentive to make the car dance to music at
+            the next stop</li>
+            </ul>
           </p>
         </b-col>
       </b-row>

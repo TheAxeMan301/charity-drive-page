@@ -20,7 +20,7 @@
 function leadingZero (number) {
   return ('0' + number).slice(-2)
 }
-const timerTarget = new Date('4 May 2019 8:00:00 PST')
+const timerTarget = new Date('4 May 2019 8:00:00 PDT')
 
 export default {
   name: 'Countdown',
