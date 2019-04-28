@@ -19,10 +19,14 @@
 
     <b-container>
       <b-row class="explain-about">
-        <b-col md="5">
+        <b-col
+          md="5"
+          class="explain-image"
+        >
           <img
             class="desert-bus"
-            src="../assets/tesla-model-x.png"
+            src="../assets/tesla-cutout.png"
+            @click="onTeslaClick($event)"
           >
         </b-col>
         <b-col
@@ -71,24 +75,37 @@
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
             will allow you to:
             <ul>
-            <li>Increase or decrease the car's internal temperature to
-            potentially uncomfortable (but not dangerous) levels</li>
-            <li>Increase or decrease the volume of the music playing in the
-            car</li>
-            <li>Skip the current song</li>
-            <li>Honk the horn while stopped (for a rather hefty donation)</li>
-            <li>While stopped, set our maximum speed for the next driving
-            segment (between -4 and +4 mph of the max limit on the route)</li>
-            <li>Donate to an incentive to enable Emissions Testing Mode (
-             make the car emit human, uh, "emissions" noises on turn signals)</li>
-            <li>Donate to an incentive to make the car dance to music at
-            the next stop</li>
+              <li>
+                Increase or decrease the car's internal temperature to
+                potentially uncomfortable (but not dangerous) levels
+              </li>
+              <li>
+                Increase or decrease the volume of the music playing in the
+                car
+              </li>
+              <li>
+                Skip the current song
+              </li>
+              <li>
+                Honk the horn while stopped (for a rather hefty donation)
+              </li>
+              <li>
+                While stopped, set our maximum speed for the next driving
+                segment (between -4 and +4 mph of the max limit on the route)
+              </li>
+              <li>
+                Donate to an incentive to enable Emissions Testing Mode (
+                make the car emit human, uh, "emissions" noises on turn signals)
+              </li>
+              <li>
+                Donate to an incentive to make the car dance to music at
+                the next stop
+              </li>
             </ul>
           </p>
         </b-col>
       </b-row>
     </b-container>
-
     <b-container
       fluid
       class="countdown-container"
@@ -150,22 +167,32 @@
         </b-col>
       </b-row>
     </b-container>
+    <Sponsors />
     <About />
   </main>
 </template>
 
 <script>
 import Countdown from '../components/countdown'
+import Sponsors from '../components/sponsors'
 import About from '../views/About'
+
+import tasbotCutout from '../assets/tasbot-cutout.png'
+import axemanCutout from '../assets/axeman-cutout.png'
+import dwangoCutout from '../assets/dwango-cutout.png'
+import teslaCutout from '../assets/tesla-cutout.png'
+
 export default {
   name: 'Home',
   components: {
-    Countdown, About
+    Countdown, About, Sponsors
   },
   data () {
     return {
       phase: 'hype',
-      carouselInterval: 10000
+      carouselInterval: 10000,
+      cycleImages: [teslaCutout, dwangoCutout, axemanCutout, tasbotCutout],
+      cycleDex: 0
     }
   },
   methods: {
@@ -177,6 +204,13 @@ export default {
       if (slideNumber === 0) {
         this.carouselInterval = 0
       }
+    },
+    onTeslaClick (event) {
+      this.cycleDex++
+      if (this.cycleDex >= this.cycleImages.length) {
+        this.cycleDex = 0
+      }
+      event.target.src = this.cycleImages[this.cycleDex]
     }
   }
 }
@@ -200,9 +234,15 @@ main {
     left: 0;
   }
 }
+.explain-image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .explain-about {
   img.desert-bus {
-    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -216,6 +256,7 @@ main {
 .carousel-image-link {
   cursor: pointer;
 }
+
 h1 {
   text-align: center;
 }

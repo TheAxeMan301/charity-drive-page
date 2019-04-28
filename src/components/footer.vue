@@ -1,16 +1,16 @@
 <template>
   <div class="footer">
     <span class="find-on">Find TASBot on</span>
-    <a href="https://www.youtube.com/dwangoac">
+    <a href="https://www.youtube.com/dwangoac" target="_blank">
       <i class="fab fa-youtube" /> YouTube
     </a>
-    <a href="https://www.twitch.tv/dwangoac">
+    <a href="https://www.twitch.tv/dwangoac" target="_blank">
       <i class="fab fa-twitch" /> Twitch
     </a>
-    <a href="https://twitter.com/MrTASBot">
+    <a href="https://twitter.com/MrTASBot" target="_blank">
       <i class="fab fa-twitter" /> Twitter
     </a>
-    <a href="http://discord.tasbot.net">
+    <a href="http://discord.tasbot.net" target="_blank">
       <i class="fab fa-discord" /> Discord
     </a>
   </div>

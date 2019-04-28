@@ -71,8 +71,9 @@
             <a
               class="icon-link"
               href="https://discord.gg/3HPhwub"
+              target="_blank"
             >
-              <i class="fab fa-discord fa-xs" />Discord
+              <i class="fab fa-discord fa-xs" /> Discord
             </a>
           </p>
           <h3 class="faq-question">
@@ -100,6 +101,7 @@
             <a
               class="icon-link"
               href="https://twitch.tv/dwangoAC"
+              target="_blank"
             >
               <i class="fab fa-twitch" />
               https://twitch.tv/dwangoAC
@@ -161,8 +163,9 @@
             <a
               class="icon-link"
               href="https://discord.gg/3HPhwub"
+              target="_blank"
             >
-              <i class="fab fa-discord fa-xs" />Discord
+              <i class="fab fa-discord fa-xs" /> Discord
             </a>
             and ask how you can help. We're
             generally relying on donations from within our community to cover expenses for this
