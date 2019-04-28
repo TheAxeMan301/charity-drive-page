@@ -19,10 +19,14 @@
 
     <b-container>
       <b-row class="explain-about">
-        <b-col md="5">
+        <b-col
+          md="5"
+          class="explain-image"
+        >
           <img
             class="desert-bus"
             src="../assets/tesla-model-x.png"
+            @click="onTeslaClick($event)"
           >
         </b-col>
         <b-col
@@ -172,6 +176,12 @@
 import Countdown from '../components/countdown'
 import Sponsors from '../components/sponsors'
 import About from '../views/About'
+
+import tasbotCutout from '../assets/tasbot-cutout.png'
+import axemanCutout from '../assets/axeman-cutout.png'
+import dwangoCutout from '../assets/dwango-cutout.png'
+import teslaCutout from '../assets/tesla-cutout.png'
+
 export default {
   name: 'Home',
   components: {
@@ -180,7 +190,9 @@ export default {
   data () {
     return {
       phase: 'hype',
-      carouselInterval: 10000
+      carouselInterval: 10000,
+      cycleImages: [teslaCutout, dwangoCutout, axemanCutout, tasbotCutout],
+      cycleDex: 0
     }
   },
   methods: {
@@ -192,6 +204,13 @@ export default {
       if (slideNumber === 0) {
         this.carouselInterval = 0
       }
+    },
+    onTeslaClick (event) {
+      this.cycleDex++
+      if (this.cycleDex >= this.cycleImages.length) {
+        this.cycleDex = 0
+      }
+      event.target.src = this.cycleImages[this.cycleDex]
     }
   }
 }
@@ -215,9 +234,13 @@ main {
     left: 0;
   }
 }
+.explain-image {
+  text-align: right;
+}
 .explain-about {
   img.desert-bus {
-    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
     padding-left: 20px;
     padding-right: 20px;
   }
