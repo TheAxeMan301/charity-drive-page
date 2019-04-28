@@ -104,5 +104,6 @@ h3 {
 .entry img {
   margin: 0 auto;
   max-height: 100%;
+  max-width: 100%;
 }
 </style>
