@@ -25,7 +25,7 @@
         >
           <img
             class="desert-bus"
-            src="../assets/tesla-model-x.png"
+            src="../assets/tesla-cutout.png"
             @click="onTeslaClick($event)"
           >
         </b-col>
@@ -235,7 +235,9 @@ main {
   }
 }
 .explain-image {
-  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .explain-about {
   img.desert-bus {
