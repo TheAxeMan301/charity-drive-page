@@ -75,6 +75,9 @@
 <script>
 export default {
   name: 'Sponsors',
+  data () {
+    return {}
+  }
 }
 </script>
 
