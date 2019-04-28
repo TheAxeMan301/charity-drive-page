@@ -71,24 +71,37 @@
               RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
             will allow you to:
             <ul>
-            <li>Increase or decrease the car's internal temperature to
-            potentially uncomfortable (but not dangerous) levels</li>
-            <li>Increase or decrease the volume of the music playing in the
-            car</li>
-            <li>Skip the current song</li>
-            <li>Honk the horn while stopped (for a rather hefty donation)</li>
-            <li>While stopped, set our maximum speed for the next driving
-            segment (between -4 and +4 mph of the max limit on the route)</li>
-            <li>Donate to an incentive to enable Emissions Testing Mode (
-             make the car emit human, uh, "emissions" noises on turn signals)</li>
-            <li>Donate to an incentive to make the car dance to music at
-            the next stop</li>
+              <li>
+                Increase or decrease the car's internal temperature to
+                potentially uncomfortable (but not dangerous) levels
+              </li>
+              <li>
+                Increase or decrease the volume of the music playing in the
+                car
+              </li>
+              <li>
+                Skip the current song
+              </li>
+              <li>
+                Honk the horn while stopped (for a rather hefty donation)
+              </li>
+              <li>
+                While stopped, set our maximum speed for the next driving
+                segment (between -4 and +4 mph of the max limit on the route)
+              </li>
+              <li>
+                Donate to an incentive to enable Emissions Testing Mode (
+                make the car emit human, uh, "emissions" noises on turn signals)
+              </li>
+              <li>
+                Donate to an incentive to make the car dance to music at
+                the next stop
+              </li>
             </ul>
           </p>
         </b-col>
       </b-row>
     </b-container>
-
     <b-container
       fluid
       class="countdown-container"
@@ -150,17 +163,19 @@
         </b-col>
       </b-row>
     </b-container>
+    <Sponsors />
     <About />
   </main>
 </template>
 
 <script>
 import Countdown from '../components/countdown'
+import Sponsors from '../components/sponsors'
 import About from '../views/About'
 export default {
   name: 'Home',
   components: {
-    Countdown, About
+    Countdown, About, Sponsors
   },
   data () {
     return {
@@ -216,6 +231,7 @@ main {
 .carousel-image-link {
   cursor: pointer;
 }
+
 h1 {
   text-align: center;
 }

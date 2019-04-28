@@ -20,22 +20,40 @@
         <b-navbar-brand>
           Find TASBot on
         </b-navbar-brand>
-        <b-nav-item href="https://www.youtube.com/dwangoac">
+        <b-nav-item
+          href="https://www.youtube.com/dwangoac"
+          target="_blank"
+        >
           <i class="fab fa-youtube" /> YouTube
         </b-nav-item>
-        <b-nav-item href="https://www.twitch.tv/dwangoac">
+        <b-nav-item
+          href="https://www.twitch.tv/dwangoac"
+          target="_blank"
+        >
           <i class="fab fa-twitch" /> Twitch
         </b-nav-item>
-        <b-nav-item href="https://twitter.com/MrTASBot">
+        <b-nav-item
+          href="https://twitter.com/MrTASBot"
+          target="_blank"
+        >
           <i class="fab fa-twitter" /> Twitter
         </b-nav-item>
-        <b-nav-item href="http://discord.tasbot.net">
+        <b-nav-item
+          href="http://discord.tasbot.net"
+          target="_blank"
+        >
           <i class="fab fa-discord" /> Discord
         </b-nav-item>
-        <b-nav-item href="http://tasvideos.org/TASBot.html">
+        <b-nav-item
+          href="http://tasvideos.org/TASBot.html"
+          target="_blank"
+        >
           <i class="fas fa-external-link-alt" /> TASVideos
         </b-nav-item>
-        <b-nav-item href="https://gdqvods.com/category/tool-assisted-speedruns/">
+        <b-nav-item
+          href="https://gdqvods.com/category/tool-assisted-speedruns/"
+          target="_blank"
+        >
           <i class="far fa-play-circle" /> GDQVods
         </b-nav-item>
         <!-- TODO: Where will donation tracker go when we are live?
