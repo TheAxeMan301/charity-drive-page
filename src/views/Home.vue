@@ -25,7 +25,7 @@
         >
           <img
             class="desert-bus"
-            src="../assets/tesla-cutout.png"
+            src="../assets/tesla-cutout-front.png"
             @click="onTeslaClick($event)"
           >
         </b-col>
@@ -180,7 +180,8 @@ import About from '../views/About'
 import tasbotCutout from '../assets/tasbot-cutout.png'
 import axemanCutout from '../assets/axeman-cutout.png'
 import dwangoCutout from '../assets/dwango-cutout.png'
-import teslaCutout from '../assets/tesla-cutout.png'
+import teslaCutoutFront from '../assets/tesla-cutout-front.png'
+import teslaCutoutSide from '../assets/tesla-cutout-side.png'
 
 export default {
   name: 'Home',
@@ -191,7 +192,7 @@ export default {
     return {
       phase: 'hype',
       carouselInterval: 10000,
-      cycleImages: [teslaCutout, dwangoCutout, axemanCutout, tasbotCutout],
+      cycleImages: [teslaCutoutFront, teslaCutoutSide, dwangoCutout, axemanCutout, tasbotCutout],
       cycleDex: 0
     }
   },
@@ -209,8 +210,32 @@ export default {
       this.cycleDex++
       if (this.cycleDex >= this.cycleImages.length) {
         this.cycleDex = 0
+        this.driveTeslas()
       }
       event.target.src = this.cycleImages[this.cycleDex]
+    },
+    driveTeslas () {
+      const numTeslas = Math.random() * 10 + 2
+      const bWidth = document.body.clientWidth
+      const bHeight = document.documentElement.clientHeight
+      for (let i = 0; i < numTeslas; i++) {
+        let tesla = document.createElement('div')
+        const yPos = Math.random() * bHeight
+        tesla.classList = 'driving-tesla'
+        tesla.style.transitionDuration = Math.random() * 1 + 2 + 's'
+        document.querySelector('body').prepend(tesla)
+        tesla.style.transform = `translate(${bWidth - 200}px, ${yPos}px)`
+      }
+      setTimeout(() => {
+        let teslas = document.querySelectorAll('.driving-tesla')
+        for (let i = 0; i < numTeslas; i++) {
+          let tesla = teslas[i]
+          tesla.style.transform = `translate(-400px, ${Math.random() * bHeight}px)`
+          setTimeout(function () {
+            tesla.remove()
+          }, 4000)
+        }
+      }, 10)
     }
   }
 }
