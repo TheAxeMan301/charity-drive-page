@@ -46,4 +46,16 @@ a:visited {
 a:hover {
   color: #fafafa;
 }
+.driving-tesla {
+  display: block;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  background: url('./assets/tesla-cutout-side.png') no-repeat;
+  background-size: 100%;
+  transition-property: transform;
+  transition-duration: 4s;
+  transition-timing-function: ease-in;
+}
 </style>
