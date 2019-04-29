@@ -1,3 +1,6 @@
+const ImageminPlugin = require('imagemin-webpack-plugin').default
+const ImageminWebpWebpackPlugin = require('imagemin-webp-webpack-plugin')
+
 module.exports = {
   publicPath: undefined,
   outputDir: undefined,
@@ -24,5 +27,18 @@ module.exports = {
         global: 'VueRouter'
       }]
     }
+  },
+  configureWebpack: {
+    plugins: [
+      new ImageminWebpWebpackPlugin({
+        overrideExtension: false
+      }),
+      new ImageminPlugin({
+        disable: process.env.NODE_ENV !== 'production',
+        pngquant: {
+          quality: 75
+        }
+      })
+    ]
   }
 }
