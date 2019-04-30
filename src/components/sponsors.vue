@@ -63,7 +63,7 @@
         lg="3"
         class="entry"
       >
-        <a 
+        <a
           class="sponsor_link"
           href="https://gitlab.com/toolassist"
           target="_blank"

@@ -39,6 +39,7 @@
               class="icon-link"
               href="https://crowdcontrol.live/"
               target="_blank"
+              rel="noopener"
             >
               <img
                 src="../assets/crowd-control-logo-wrench-small.png"
@@ -53,6 +54,7 @@
             (<a
               href="https://nami.org/"
               target="_blank"
+              rel="noopener"
             >National Alliance on Mental Illness
               <i class="fas fa-external-link-alt fa-xs" /></a>).
           </p>
@@ -61,12 +63,14 @@
             <a
               href="http://tas.bot/"
               target="_blank"
+              rel="noopener"
             >
               Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
             this inaugural event on the way to
             <a
               href="https://www.rpglimitbreak.com"
               target="_blank"
+              rel="noopener"
             >
               <img
                 src="../assets/rpglb-logo-carousel.png"
