@@ -23,36 +23,42 @@
         <b-nav-item
           href="https://www.youtube.com/dwangoac"
           target="_blank"
+          rel="noopener"
         >
           <i class="fab fa-youtube" /> YouTube
         </b-nav-item>
         <b-nav-item
           href="https://www.twitch.tv/dwangoac"
           target="_blank"
+          rel="noopener"
         >
           <i class="fab fa-twitch" /> Twitch
         </b-nav-item>
         <b-nav-item
           href="https://twitter.com/MrTASBot"
           target="_blank"
+          rel="noopener"
         >
           <i class="fab fa-twitter" /> Twitter
         </b-nav-item>
         <b-nav-item
           href="http://discord.tasbot.net"
           target="_blank"
+          rel="noopener"
         >
           <i class="fab fa-discord" /> Discord
         </b-nav-item>
         <b-nav-item
           href="http://tasvideos.org/TASBot.html"
           target="_blank"
+          rel="noopener"
         >
           <i class="fas fa-external-link-alt" /> TASVideos
         </b-nav-item>
         <b-nav-item
           href="https://gdqvods.com/category/tool-assisted-speedruns/"
           target="_blank"
+          rel="noopener"
         >
           <i class="far fa-play-circle" /> GDQVods
         </b-nav-item>
