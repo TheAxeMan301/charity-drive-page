@@ -11,11 +11,12 @@
       >
         <a
           class="sponsor_link"
-          href="https://www.wilsonelectronics.com/"
+          href="https://www.wilsonsignalbooster.com/weboost-drive-4g-x-otr-mobile-signal-booster-kit-470210.html?utm_source=tasbot&utm_medium=logo&utm_campaign=otr"
           target="_blank"
+          rel="noopener"
         >
           <img
-            src="../assets/wilson.jpg"
+            src="../assets/wbs.png"
             alt="Wilson Signal Booster"
             title="Wilson Signal Booster"
           >
@@ -30,6 +31,7 @@
           class="sponsor_link"
           href="https://github.com/GlitchyLabs"
           target="_blank"
+          rel="noopener"
         >
           <img
             src="../assets/glitchylabs.png"
@@ -47,6 +49,7 @@
           class="sponsor_link"
           href="https://crowdcontrol.live"
           target="_blank"
+          rel="noopener"
         >
           <img
             src="../assets/crowd-control-logo-carousel.png"
@@ -60,7 +63,12 @@
         lg="3"
         class="entry"
       >
-        <a class="sponsor_link">
+        <a 
+          class="sponsor_link"
+          href="https://gitlab.com/toolassist"
+          target="_blank"
+          rel="noopener"
+        >
           <img
             src="../assets/toolassist.png"
             alt="ToolAssist"

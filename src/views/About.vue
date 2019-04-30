@@ -23,6 +23,7 @@
               class="icon-link"
               href="https://crowdcontrol.live/"
               target="_blank"
+              rel="noopener"
             >
               Crowd Control
               <i class="fas fa-external-link-alt fa-xs" />
@@ -41,6 +42,7 @@
               class="icon-link"
               href="https://nami.org/"
               target="_blank"
+              rel="noopener"
             >
               National Alliance on Mental Illness
               <i class="fas fa-external-link-alt fa-xs" />
@@ -72,6 +74,7 @@
               class="icon-link"
               href="https://discord.gg/3HPhwub"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-discord fa-xs" /> Discord
             </a>
@@ -85,6 +88,7 @@
               class="icon-link"
               href="https://crowdcontrol.live/"
               target="_blank"
+              rel="noopener"
             >
               Crowd Control
               <i class="fas fa-external-link-alt fa-xs" />
@@ -102,6 +106,7 @@
               class="icon-link"
               href="https://twitch.tv/dwangoAC"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-twitch" />
               https://twitch.tv/dwangoAC
@@ -164,6 +169,7 @@
               class="icon-link"
               href="https://discord.gg/3HPhwub"
               target="_blank"
+              rel="noopener"
             >
               <i class="fab fa-discord fa-xs" /> Discord
             </a>
