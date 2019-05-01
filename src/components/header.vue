@@ -66,13 +66,13 @@
         Probably a good idea to put it somewhere besides the header. -->
         <b-nav-item
           v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/ui/donate/BBCB2018"
+          href="https://tracker.tasbot.net/tracker/donate/DTCD2019"
         >
           <i class="fas fa-donate" /> Donate
         </b-nav-item>
         <b-nav-item
           v-if="phase === 'live'"
-          href="https://tracker.tasbot.net"
+          href="https://tracker.tasbot.net/tracker/index/DTCD2019"
         >
           Donation tracker
         </b-nav-item>

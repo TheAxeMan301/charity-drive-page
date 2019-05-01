@@ -1,12 +1,17 @@
 <template>
   <div id="app">
     <app-header :phase="phase" />
-    <router-view class="main-view" />
+    <router-view
+      :phase="phase"
+      class="main-view"
+    />
   </div>
 </template>
 
 <script>
 import Header from './components/header'
+
+const timerTarget = new Date('4 May 2019 8:00:00 PDT')
 
 export default {
   name: 'App',
@@ -16,6 +21,20 @@ export default {
   data () {
     return {
       phase: 'hype'
+    }
+  },
+  created () {
+    this.checkTimer()
+    this.timeUpdateInterval = setInterval(() => {
+      this.checkTimer()
+    }, 1000)
+  },
+  methods: {
+    checkTimer () {
+      if (timerTarget.getTime() < new Date().getTime()) {
+        this.phase = 'live'
+        clearInterval(this.timeUpdateInterval)
+      }
     }
   }
 }
