@@ -3,17 +3,25 @@
     <h1>Desert Tesla Charity Drive - May 4th, 2019</h1>
 
     <b-container
-      fluid
-      class="stream"
+      class="video"
       v-if="phase === 'live'"
     >
-      <iframe
+      <b-embed
+        type="iframe"
+        aspect="16by9"
         src="https://player.twitch.tv/?channel=dwangoac"
-        frameborder="0"
-        allowfullscreen="true"
-        scrolling="no"
-        height="100%"
-        width="100%"
+        allowfullscreen
+      />
+    </b-container>
+    <b-container
+      class="video"
+      v-if="phase === 'hype'"
+    >
+      <b-embed
+        type="iframe"
+        aspect="16by9"
+        src="https://www.youtube-nocookie.com/embed/ek-7J0QOYfA"
+        allowfullscreen
       />
     </b-container>
 
@@ -192,9 +200,14 @@ export default {
   components: {
     Countdown, About, Sponsors
   },
+  props: {
+    phase: {
+      type: String,
+      default: 'hype'
+    }
+  },
   data () {
     return {
-      phase: 'hype',
       carouselInterval: 10000,
       cycleImages: [teslaCutoutFront, teslaCutoutSide, dwangoCutout, axemanCutout, tasbotCutout],
       cycleDex: 0
@@ -250,18 +263,8 @@ main {
   margin: 0 auto 30px auto;
   width: 100%;
 }
-.stream {
-  width: 100%;
-  margin: 0 auto;
-  height: 0;
-  padding-bottom: 56.25%;
-  position: relative;
-
-  iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+.video {
+  margin-bottom: 1em;
 }
 .explain-image {
   display: flex;
