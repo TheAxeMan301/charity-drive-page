@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>Desert Tesla Charity Drive - May 4th, 2019</h1>
+    <h1>TASBot</h1>
 
     <b-container
       class="video"
@@ -24,171 +24,39 @@
         allowfullscreen
       />
     </b-container>
-
-    <b-container>
-      <b-row class="explain-about">
-        <b-col
-          md="5"
-          class="explain-image"
-        >
-          <img
-            class="desert-bus"
-            src="../assets/tesla-cutout-front.png"
-            @click="onTeslaClick($event)"
-          >
-        </b-col>
-        <b-col
-          md="7"
-          class="explain-text"
-        >
-          <p>
-            On May 4th, make dwangoAC melt or TheAxeMan freeze using
-            <a
-              class="icon-link"
-              href="https://crowdcontrol.live/"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="../assets/crowd-control-logo-wrench-small.png"
-                height="20"
-              >
-              Crowd Control
-              <i class="fas fa-external-link-alt fa-xs" />
-            </a>
-            to hack the comfort features of a Tesla Model X during a 14+ hour desert
-            livestream from Petaluma, CA to Salt Lake City, UT in a (literal) charity drive
-            benefiting NAMI
-            (<a
-              href="https://nami.org/"
-              target="_blank"
-              rel="noopener"
-            >National Alliance on Mental Illness
-              <i class="fas fa-external-link-alt fa-xs" /></a>).
-          </p>
-          <p>
-            Presented by
-            <a
-              href="http://tas.bot/"
-              target="_blank"
-              rel="noopener"
-            >
-              Team TASBot <i class="fas fa-external-link-alt fa-xs" /></a>,
-            this inaugural event on the way to
-            <a
-              href="https://www.rpglimitbreak.com"
-              target="_blank"
-              rel="noopener"
-            >
-              <img
-                src="../assets/rpglb-logo-carousel.png"
-                height="20"
-              >
-              RPG Limit Break <i class="fas fa-external-link-alt fa-xs" /></a>
-            will allow you to:
-            <ul>
-              <li>
-                Increase or decrease the car's internal temperature to
-                potentially uncomfortable (but not dangerous) levels
-              </li>
-              <li>
-                Increase or decrease the volume of the music playing in the
-                car
-              </li>
-              <li>
-                Skip the current song
-              </li>
-              <li>
-                Honk the horn while stopped (for a rather hefty donation)
-              </li>
-              <li>
-                While stopped, set our maximum speed for the next driving
-                segment (between -4 and +4 mph of the max limit on the route)
-              </li>
-              <li>
-                Donate to an incentive to enable Emissions Testing Mode (
-                make the car emit human, uh, "emissions" noises on turn signals)
-              </li>
-              <li>
-                Donate to an incentive to make the car dance to music at
-                the next stop
-              </li>
-            </ul>
-          </p>
-        </b-col>
-      </b-row>
-    </b-container>
     <b-container
-      fluid
-      class="countdown-container"
+      class="video"
+      v-if="phase === 'no-event'"
     >
-      <countdown />
+      <b-embed
+        type="iframe"
+        aspect="16by9"
+        src="https://www.youtube.com/embed/CTOUOeec4Qc?rel=0"
+        allowfullscreen
+      />
     </b-container>
 
     <b-container>
-      <b-row>
-        <b-col
-          cols="8"
-          offset="2"
-        >
-          <b-carousel
-            class="the-carousel"
-            :interval="carouselInterval"
-            controls
-            @sliding-end="onCarouselSlideEnd"
-          >
-            <b-carousel-slide>
-              <img
-                slot="img"
-                class="d-block img-fluid carousel-image-link"
-                @click="openLinkNewTab('https://nami.org/')"
-                src="../assets/nami-logo-carousel.png"
-                alt="Benefiting NAMI"
-                height="200"
-              >
-            </b-carousel-slide>
-            <b-carousel-slide>
-              <img
-                slot="img"
-                class="d-block img-fluid"
-                src="../assets/tasbot-logo-carousel.png"
-                alt="Presented by Team TASBot"
-              >
-            </b-carousel-slide>
-            <b-carousel-slide>
-              <img
-                slot="img"
-                class="d-block img-fluid carousel-image-link"
-                @click="openLinkNewTab('https://crowdcontrol.live/')"
-                src="../assets/crowd-control-logo-carousel.png"
-                alt="Crowd Control"
-                height="200"
-              >
-            </b-carousel-slide>
-            <b-carousel-slide>
-              <img
-                slot="img"
-                class="d-block img-fluid carousel-image-link"
-                @click="openLinkNewTab('https://www.rpglimitbreak.com')"
-                src="../assets/rpglb-logo-carousel.png"
-                alt="RPG Limit Break"
-                height="200"
-              >
-            </b-carousel-slide>
-          </b-carousel>
-        </b-col>
-      </b-row>
+      <p class="explain-text">
+        TASBot is best described as a special R.O.B. robot outfitted with Legos to hold a custom circuit board that
+        can exactly mimic the behavior of a video game controller. TASBot can play games on real video game
+        consoles with superhuman abilities, usually leading to game breaking glitches in front of live audiences.
+        TASBot has a long and storied history that starts with the initial efforts to replay Tool-Assisted
+        Speedruns on physical hardware via a process now called console verification.
+      </p>
+      <p class="explain-text">
+        TASBot was born on 2013-12-22 and is currently hosted by his creator and keeper, dwangoAC. He is on Twitter
+        as <a href="https://twitter.com/MrTASBot">@MrTASBot</a>, tas.bot (which redirects to this page), and on
+        Freenode IRC in #tasbot. He has made appearances at AGDQ 2014, AGDQ 2015, SGDQ 2015, AGDQ 2016, SGDQ
+        2016, and AGDQ 2017 (although the earliest TAS involvement at a GDQ event was organized by DarkKobold
+        during SGDQ 2011). TASBot has also participated in talks at TWiT's The New Screen Savers episode 60,
+        DEF CON 24, and GeekPwn 2016.
+      </p>
     </b-container>
-    <Sponsors />
-    <About />
   </main>
 </template>
 
 <script>
-import Countdown from '../components/countdown'
-import Sponsors from '../components/sponsors'
-import About from '../views/About'
-
 import tasbotCutout from '../assets/tasbot-cutout.png'
 import axemanCutout from '../assets/axeman-cutout.png'
 import dwangoCutout from '../assets/dwango-cutout.png'
@@ -198,7 +66,6 @@ import teslaCutoutSide from '../assets/tesla-cutout-side.png'
 export default {
   name: 'Home',
   components: {
-    Countdown, About, Sponsors
   },
   props: {
     phase: {
@@ -279,6 +146,9 @@ main {
     padding-right: 20px;
   }
 }
+.explain-text {
+  font-size: 1.2em;
+}
 .countdown-container {
   margin-bottom: 40px;
 }
@@ -294,9 +164,11 @@ h1 {
 }
 a:link {
   color: #ddd;
+  font-weight: bold;
 }
 a:visited {
   color: #ddd;
+  font-weight: bold;
 }
 a:hover {
   color: #fafafa;

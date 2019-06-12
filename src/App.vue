@@ -20,14 +20,16 @@ export default {
   },
   data () {
     return {
-      phase: 'hype'
+      phase: 'no-event'
     }
   },
   created () {
-    this.checkTimer()
-    this.timeUpdateInterval = setInterval(() => {
+    if (this.phase === 'hype') {
       this.checkTimer()
-    }, 1000)
+      this.timeUpdateInterval = setInterval(() => {
+        this.checkTimer()
+      }, 1000)
+    }
   },
   methods: {
     checkTimer () {
