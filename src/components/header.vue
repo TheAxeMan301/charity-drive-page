@@ -35,6 +35,13 @@
           <i class="fab fa-twitch" /> Twitch
         </b-nav-item>
         <b-nav-item
+          href="https://www.patreon.com/dwangoac"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-patreon" /> Patreon
+        </b-nav-item>
+        <b-nav-item
           href="https://twitter.com/MrTASBot"
           target="_blank"
           rel="noopener"
