@@ -1,7 +1,7 @@
 <template>
   <b-navbar
     toggleable="md"
-    type="dark"
+    type="light"
     class="whole-nav"
   >
     <b-navbar-toggle target="nav-text-collapse">
@@ -97,8 +97,6 @@ export default {
 
 <style scoped lang="scss">
 nav.navbar.whole-nav {
-  background: #212121;
-  background: rgba(0, 0, 0, 0.5);
 ul.navbar-nav.top-navbar-nav {
   margin-left: auto;
   margin-right: auto;

@@ -11,7 +11,7 @@
 <script>
 import Header from './components/header'
 
-const timerTarget = new Date('4 May 2019 8:00:00 PDT')
+const timerTarget = new Date('14 Sept 2019 8:00:00 PDT')
 
 export default {
   name: 'App',
@@ -47,10 +47,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   padding: 0;
-  color: #ddd;
-  background: #303030;
-  background-image: url('./assets/bg.png');
-  background-repeat: repeat;
+  color: #303030;
+  background: #ddd;
   min-height: 100%;
 }
 #app {

@@ -1,5 +1,5 @@
 import VueRouter from 'vue-router'
-import Home from './views/Home'
+import Home from './views/MagwestHome'
 import About from './views/About'
 
 export default new VueRouter({

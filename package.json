@@ -11,6 +11,7 @@
     "core-js": "^2.6.5",
     "imagemin-webp-webpack-plugin": "^3.1.0",
     "imagemin-webpack-plugin": "^2.4.2",
+    "moment": "^2.24.0",
     "vuejs-logger": "^1.5.3"
   },
   "devDependencies": {
@@ -24,7 +25,7 @@
     "@vue/cli-service": "^3.7.0",
     "@vue/eslint-config-standard": "^4.0.0",
     "babel-eslint": "^10.0.1",
-    "bootstrap-vue": "^2.0.0-rc.16",
+    "bootstrap-vue": "^2.0.0",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
     "node-sass": "^4.12.0",
