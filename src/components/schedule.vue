@@ -1,6 +1,9 @@
 <template>
   <table>
-    <tr v-for="row in rowData" :key="row.start">
+    <tr
+      v-for="row in rowData"
+      :key="row.start"
+    >
       <td class="start-time text-right">
         {{ row.start }}
       </td>
@@ -29,7 +32,7 @@ export default {
   },
   data () {
     return {
-      scheduleData,
+      scheduleData
     }
   },
   computed: {

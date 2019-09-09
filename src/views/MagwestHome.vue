@@ -1,6 +1,5 @@
 <template>
   <main>
-
     <b-container
       class="video"
       v-if="phase === 'live'"
@@ -14,16 +13,18 @@
     </b-container>
 
     <div class="logo-container">
-      <img class="magwestgo-logo" src="../assets/magwesticon2.jpg" />
+      <img
+        class="magwestgo-logo"
+        src="../assets/magwesticon2.jpg"
+      >
     </div>
     <b-jumbotron
       text-variant="light"
       lead="Sept 14, 2019"
       lead-tag="h3"
     >
-      <template v-slot:header>
-      </template>
-      <hr class="jumbo-hr" />
+      <template v-slot:header />
+      <hr class="jumbo-hr">
       <b-container
         fluid
         class="countdown-container"
@@ -33,38 +34,40 @@
     </b-jumbotron>
 
     <b-container>
-    <b-row class="justify-content-md-center">
-      <b-col md="4">
-      <b-card
-        class="benefiting-card"
-        text-variant="white"
-      >
-        <b-card-title class="text-center">
-          Benefiting Child's Play
-        </b-card-title>
-        Child's Play is dedicated to improving the lives of children in
-        hospitals and domestic abuse shelters around the world through
-        the kindness and generosity of the video game community and the
-        power of play.
-      </b-card>
-      <div class="logo-container">
-        <img class="childsplay-controller" src="../assets/logo-childs-play.png" />
-      </div>
-      </b-col>
-      <b-col md="4">
-      <b-card
-        class="schedule-card"
-        text-variant="white"
-      >
-        <b-card-title class="text-center">
-          Schedule
-        </b-card-title>
-        <schedule />
-      </b-card>
-      </b-col>
-    </b-row>
+      <b-row class="justify-content-md-center">
+        <b-col md="4">
+          <b-card
+            class="benefiting-card"
+            text-variant="white"
+          >
+            <b-card-title class="text-center">
+              Benefiting Child's Play
+            </b-card-title>
+            Child's Play is dedicated to improving the lives of children in
+            hospitals and domestic abuse shelters around the world through
+            the kindness and generosity of the video game community and the
+            power of play.
+          </b-card>
+          <div class="logo-container">
+            <img
+              class="childsplay-controller"
+              src="../assets/logo-childs-play.png"
+            >
+          </div>
+        </b-col>
+        <b-col md="4">
+          <b-card
+            class="schedule-card"
+            text-variant="white"
+          >
+            <b-card-title class="text-center">
+              Schedule
+            </b-card-title>
+            <schedule />
+          </b-card>
+        </b-col>
+      </b-row>
     </b-container>
-
   </main>
 </template>
 
@@ -91,7 +94,7 @@ export default {
     openLinkNewTab (url) {
       let win = window.open(url, '_blank')
       win.focus()
-    },
+    }
   }
 }
 </script>
