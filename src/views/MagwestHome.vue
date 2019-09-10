@@ -1,9 +1,9 @@
 <template>
   <main>
-    <b-container
-      class="video"
-      v-if="phase === 'live'"
-    >
+    <b-container v-if="phase === 'hype'" fluid class="countdown">
+      <Countdown />
+    </b-container>
+    <b-container v-if="phase === 'live'" class="video">
       <b-embed
         type="iframe"
         aspect="16by9"
@@ -11,59 +11,28 @@
         allowfullscreen
       />
     </b-container>
-
-    <div class="logo-container">
-      <img
-        class="magwestgo-logo"
-        src="../assets/magwesticon2.jpg"
-      >
-    </div>
-    <b-jumbotron
-      text-variant="light"
-      lead="Sept 14, 2019"
-      lead-tag="h3"
-    >
-      <template v-slot:header />
-      <hr class="jumbo-hr">
-      <b-container
-        fluid
-        class="countdown-container"
-      >
-        <countdown />
-      </b-container>
-    </b-jumbotron>
-
-    <b-container>
+    <b-container class="boxes">
       <b-row class="justify-content-md-center">
-        <b-col md="4">
-          <b-card
-            class="benefiting-card"
-            text-variant="white"
-          >
+        <b-col md="6">
+          <b-card class="benefiting-card" text-variant="white">
             <b-card-title class="text-center">
               Benefiting Child's Play
             </b-card-title>
             Child's Play is dedicated to improving the lives of children in
-            hospitals and domestic abuse shelters around the world through
-            the kindness and generosity of the video game community and the
-            power of play.
+            hospitals and domestic abuse shelters around the world through the
+            kindness and generosity of the video game community and the power of
+            play.
           </b-card>
-          <div class="logo-container">
-            <img
-              class="childsplay-controller"
-              src="../assets/logo-childs-play.png"
-            >
-          </div>
         </b-col>
-        <b-col md="4">
-          <b-card
-            class="schedule-card"
-            text-variant="white"
-          >
+        <b-col md="6">
+          <b-card class="schedule-card" text-variant="white">
             <b-card-title class="text-center">
               Schedule
             </b-card-title>
-            <schedule />
+            <small
+              >Times converted to your local timezone ({{ localTimezone }})
+            </small>
+            <Schedule />
           </b-card>
         </b-col>
       </b-row>
@@ -72,31 +41,34 @@
 </template>
 
 <script>
-import Countdown from '../components/countdown'
-import Schedule from '../components/schedule'
+import Schedule from "../components/schedule";
+import Countdown from "../components/countdown";
+import moment from "moment-timezone";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Countdown, Schedule
+    Countdown,
+    Schedule
   },
   props: {
     phase: {
       type: String,
-      default: 'hype'
+      default: "hype"
     }
   },
-  data () {
+  data: function() {
     return {
-    }
+      localTimezone: moment.tz.guess()
+    };
   },
   methods: {
-    openLinkNewTab (url) {
-      let win = window.open(url, '_blank')
-      win.focus()
+    openLinkNewTab(url) {
+      let win = window.open(url, "_blank");
+      win.focus();
     }
   }
-}
+};
 </script>
 
 <style scoped lang="scss">
@@ -107,51 +79,21 @@ main {
 .video {
   margin-bottom: 1em;
 }
-.explain-image {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.explain-about {
-  img.desert-bus {
-    max-width: 100%;
-    max-height: 350px;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-.logo-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 
-  img.magwestgo-logo {
-    flex: 0 1 auto;
-  }
+.countdown {
+  margin: 0;
+  background: #333;
+  color: #ddd;
 }
-.countdown-container {
-  margin-bottom: 40px;
+.boxes {
+  margin-top: 3em;
 }
-.the-carousel {
-  margin-bottom: 20px;
+.card {
+  border: 0;
 }
-.carousel-image-link {
-  cursor: pointer;
-}
-.jumbotron {
-  background-color: #58afda;
-
-  h1 {
-    text-align: center;
-    font-size: 4em;
-  }
-  .lead {
-    text-align: center;
-    font-size: 3em;
-  }
-  hr {
-    border: 1px solid #ddd;
-  }
+.card {
+  font-size: 18px;
+  margin-bottom: 4em;
 }
 .card.benefiting-card {
   background-color: #9ebb6a;
@@ -164,7 +106,45 @@ main {
 img.childsplay-controller {
   width: 100px;
 }
-
+.benefiting-card::after {
+  content: "";
+  background-image: url("../assets/logo-childs-play.png");
+  background-size: 65px;
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  bottom: -55px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.schedule-card {
+  h4 {
+    margin: 0;
+  }
+  small {
+    text-align: center;
+    display: block;
+    margin-bottom: 1em;
+  }
+}
+.card-title {
+  font-weight: 600;
+}
+.schedule-card::after {
+  content: "\f133";
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+  font-size: 60px;
+  position: absolute;
+  bottom: -62px;
+  text-align: center;
+  width: 100%;
+  color: #35bcd7;
+}
 a:link {
   color: #ddd;
 }

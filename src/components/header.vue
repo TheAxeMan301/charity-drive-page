@@ -1,110 +1,149 @@
 <template>
-  <b-navbar
-    toggleable="md"
-    type="light"
-    class="whole-nav"
-  >
-    <b-navbar-toggle target="nav-text-collapse">
-      <b-navbar-toggle
-        target="nav-text-collapse"
-        disabled
-      />
-      Find TASBot on
-    </b-navbar-toggle>
+  <header>
+    <b-container>
+      <b-row>
+        <b-col md="12" lg="4" class="logo-container">
+          <img
+            class="magwestgo-logo"
+            src="../assets/magwest.png"
+            alt="Logo of MAGWest Go!"
+          />
+        </b-col>
 
-    <b-collapse
-      id="nav-text-collapse"
-      is-nav
-    >
-      <b-navbar-nav class="top-navbar-nav">
-        <b-navbar-brand>
-          Find TASBot on
-        </b-navbar-brand>
-        <b-nav-item
-          href="https://www.youtube.com/dwangoac"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fab fa-youtube" /> YouTube
-        </b-nav-item>
-        <b-nav-item
-          href="https://www.twitch.tv/dwangoac"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fab fa-twitch" /> Twitch
-        </b-nav-item>
-        <b-nav-item
-          href="https://twitter.com/MrTASBot"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fab fa-twitter" /> Twitter
-        </b-nav-item>
-        <b-nav-item
-          href="http://discord.tasbot.net"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fab fa-discord" /> Discord
-        </b-nav-item>
-        <b-nav-item
-          href="http://tasvideos.org/TASBot.html"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="fas fa-external-link-alt" /> TASVideos
-        </b-nav-item>
-        <b-nav-item
-          href="https://gdqvods.com/category/tool-assisted-speedruns/"
-          target="_blank"
-          rel="noopener"
-        >
-          <i class="far fa-play-circle" /> GDQVods
-        </b-nav-item>
-        <!-- TODO: Where will donation tracker go when we are live?
-        Probably a good idea to put it somewhere besides the header. -->
-        <b-nav-item
-          v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/donate/DTCD2019"
-        >
-          <i class="fas fa-donate" /> Donate
-        </b-nav-item>
-        <b-nav-item
-          v-if="phase === 'live'"
-          href="https://tracker.tasbot.net/tracker/index/DTCD2019"
-        >
-          Donation tracker
-        </b-nav-item>
-      </b-navbar-nav>
-    </b-collapse>
-  </b-navbar>
+        <b-col>
+          <b-navbar toggleable="md" type="light" class="whole-nav">
+            <b-navbar-toggle target="nav-text-collapse">
+              <b-navbar-toggle target="nav-text-collapse" disabled /> Links
+            </b-navbar-toggle>
+            <b-collapse id="nav-text-collapse" is-nav>
+              <b-navbar-nav class="top-navbar-nav">
+                <b-nav-item
+                  href="https://go.magwest.org"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Home
+                </b-nav-item>
+                <b-nav-item
+                  href="https://www.magwest.org/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  MAGWest
+                </b-nav-item>
+                <b-nav-item
+                  href="https://tracker.tasbot.net/tracker/runs/MWG2019"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Schedule
+                </b-nav-item>
+                <b-nav-item
+                  v-if="phase === 'live'"
+                  href="https://tracker.tasbot.net/tracker/donate/MWG2019"
+                >
+                  <i class="fas fa-donate" /> Donate
+                </b-nav-item>
+                <b-nav-item
+                  v-if="phase === 'live'"
+                  href="https://tracker.tasbot.net/tracker/index/MWG2019"
+                  >Donation tracker</b-nav-item
+                >
+              </b-navbar-nav>
+            </b-collapse>
+          </b-navbar>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col>
+          <h1>MAGWest Go!</h1>
+          <span
+            >MAGWests's charity marathon is here! It's 8 hours of speed runs,
+            TAS'es, randomizer races, and maybe even a few surprises. All
+            donations, subscription, and bit proceeds will benefit Child's Play
+            of Redmond, WA.</span
+          ><br />
+          <span
+            >September 14. Live on
+            <a href="https://twitch.tv/magfest2">twitch.tv/magfest2</a></span
+          >
+        </b-col>
+      </b-row>
+    </b-container>
+  </header>
 </template>
 
 <script>
 export default {
-  name: 'Header',
-  components: {},
+  name: "Header",
   props: {
     phase: {
       type: String,
-      default: 'hype'
+      default: "hype"
     }
   }
-}
-
+};
 </script>
 
 <style scoped lang="scss">
-nav.navbar.whole-nav {
-ul.navbar-nav.top-navbar-nav {
-  margin-left: auto;
-  margin-right: auto;
-
-  li.nav-item {
-    margin-right: 10px;
-    white-space: nowrap;
+header {
+  background-color: #4aabd3;
+  background: linear-gradient(#79c7ed, #4aabd3);
+  color: #eee;
+  padding-bottom: 1em;
+  h1,
+  h3 {
+    text-align: center;
+    margin: 0;
+  }
+  h1 {
+    font-size: 4em;
+    font-weight: 700;
+    @media (max-width: 576px) {
+      font-size: 2em;
+    }
+  }
+  span {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+  }
+  a {
+    font-weight: 700;
   }
 }
+.logo-container {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: -1em;
+  @media (max-width: 992px) {
+    justify-content: center;
+    margin-bottom: 0;
+  }
+}
+nav.navbar.whole-nav {
+  text-transform: uppercase;
+  @media (max-width: 992px) {
+    justify-content: center;
+    text-align: center;
+  }
+  ul.navbar-nav.top-navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+
+    li.nav-item {
+      margin-right: 10px;
+      white-space: nowrap;
+    }
+    a.nav-link {
+      font-weight: 600;
+      letter-spacing: 2px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+    a.nav-link:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
 }
 </style>
