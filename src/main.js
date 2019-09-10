@@ -7,7 +7,7 @@ import VueLogger from "vuejs-logger";
 
 const isProduction = process.env.NODE_ENV === "production";
 Vue.config.productionTip = false;
-Vue.config.devtools = true;
+Vue.config.devtools = false;
 Vue.use(VueLogger, {
   isEnabled: true,
   logLevel: isProduction ? "error" : "debug",

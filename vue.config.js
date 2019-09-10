@@ -1,6 +1,5 @@
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
-const webpack = require("webpack");
 
 module.exports = {
   publicPath: undefined,

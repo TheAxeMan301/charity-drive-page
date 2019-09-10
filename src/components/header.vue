@@ -98,7 +98,6 @@ header {
   }
   h1 {
     font-size: 4em;
-    font-weight: 700;
     @media (max-width: 576px) {
       font-size: 2em;
     }
