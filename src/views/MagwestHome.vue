@@ -30,7 +30,9 @@
               Schedule
             </b-card-title>
             <small
-              >Times converted to your local timezone ({{ localTimezone }})
+              >Times converted to your local timezone ({{
+                Intl.DateTimeFormat().resolvedOptions().timeZone
+              }})
             </small>
             <Schedule />
           </b-card>
@@ -43,7 +45,6 @@
 <script>
 import Schedule from "../components/schedule";
 import Countdown from "../components/countdown";
-import moment from "moment-timezone";
 
 export default {
   name: "Home",
@@ -56,11 +57,6 @@ export default {
       type: String,
       default: "hype"
     }
-  },
-  data: function() {
-    return {
-      localTimezone: moment.tz.guess()
-    };
   },
   methods: {
     openLinkNewTab(url) {

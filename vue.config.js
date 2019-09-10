@@ -1,5 +1,6 @@
 const ImageminPlugin = require("imagemin-webpack-plugin").default;
 const ImageminWebpWebpackPlugin = require("imagemin-webp-webpack-plugin");
+// const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 
 module.exports = {
   publicPath: undefined,
@@ -46,6 +47,7 @@ module.exports = {
           quality: 75
         }
       })
+      // new BundleAnalyzerPlugin()
     ]
   }
 };

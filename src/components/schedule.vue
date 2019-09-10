@@ -12,16 +12,22 @@
 </template>
 
 <script>
-import moment from "moment-timezone";
-let startTime = moment.tz("2019-09-14 08:00", "America/Los_Angeles");
-let local = moment.tz.guess();
+let startTime = new Date("2019-09-14T08:00:00-07:00");
 let scheduleData = [
   {
-    length: "1:00:00",
+    length: {
+      hours: 1,
+      minutes: 15,
+      seconds: 0
+    },
     description: "Stanley Parable"
   },
   {
-    length: "1:00:00",
+    length: {
+      hours: 2,
+      minutes: 0,
+      seconds: 0
+    },
     description: "ALTTP randomizer triforce hunt"
   }
 ];
@@ -39,15 +45,32 @@ export default {
       let data = [];
       for (let run of scheduleData) {
         data.push({
-          start: startTime.tz(local).format("h:mm a"),
+          start: this.formatDate(startTime),
           description: run.description
         });
-        startTime = startTime.add(moment.duration(run.length));
+        const add = run.length;
+        const addMs =
+          add.hours * 60 * 60 * 1000 +
+          add.minutes * 60 * 1000 +
+          add.seconds * 1000;
+        startTime = new Date(startTime.getTime() + addMs);
       }
       return data;
     }
   },
-  methods: {}
+  methods: {
+    formatDate(date) {
+      let hours = date.getHours();
+      let minutes = date
+        .getMinutes()
+        .toString(10)
+        .padStart(2, "0");
+      let PM = hours >= 12;
+      if (PM) hours -= 12;
+      if (hours == 0) hours = 12;
+      return `${hours}:${minutes} ${PM ? "pm" : "am"}`;
+    }
+  }
 };
 </script>
 
