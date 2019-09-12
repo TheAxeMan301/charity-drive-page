@@ -10,8 +10,8 @@
           />
         </b-col>
 
-        <b-col>
-          <b-navbar toggleable="md" type="light" class="whole-nav">
+        <b-col lg="8">
+          <b-navbar toggleable="md" type="dark" class="whole-nav">
             <b-navbar-toggle target="nav-text-collapse">
               <b-navbar-toggle target="nav-text-collapse" disabled /> Links
             </b-navbar-toggle>
@@ -42,7 +42,7 @@
                   v-if="phase === 'live'"
                   href="https://tracker.tasbot.net/tracker/donate/MWG2019"
                 >
-                  <i class="fas fa-donate" /> Donate
+                  Donate
                 </b-nav-item>
                 <b-nav-item
                   v-if="phase === 'live'"
@@ -68,6 +68,17 @@
             <a href="https://twitch.tv/magfest2">twitch.tv/magfest2</a></span
           >
         </b-col>
+      </b-row>
+      <b-row v-if="phase === 'live'">
+        <b-col
+          ><b-button
+            pill
+            variant="danger"
+            block
+            href="https://tracker.tasbot.net/tracker/donate/MWG2019"
+            >Donate now!</b-button
+          ></b-col
+        >
       </b-row>
     </b-container>
   </header>
@@ -98,6 +109,7 @@ header {
   }
   h1 {
     font-size: 4em;
+    font-weight: 700;
     @media (max-width: 576px) {
       font-size: 2em;
     }

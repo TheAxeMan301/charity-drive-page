@@ -12,23 +12,47 @@
 </template>
 
 <script>
-let startTime = new Date("2019-09-14T08:00:00-07:00");
+let startTime = new Date("14 Sept 2019 12:00:00 PDT");
 let scheduleData = [
   {
     length: {
-      hours: 1,
-      minutes: 15,
+      hours: 0,
+      minutes: 45,
       seconds: 0
     },
-    description: "Stanley Parable"
+    description: "Ecco 2 any%"
+  },
+  {
+    length: {
+      hours: 1,
+      minutes: 30,
+      seconds: 0
+    },
+    description: "The Stanley Parable 12 endings"
   },
   {
     length: {
       hours: 2,
+      minutes: 30,
+      seconds: 0
+    },
+    description: "Crystallis rando any%"
+  },
+  {
+    length: {
+      hours: 1,
+      minutes: 30,
+      seconds: 0
+    },
+    description: "The Legend of Zelda: ALTTP randomizer race"
+  },
+  {
+    length: {
+      hours: 1,
       minutes: 0,
       seconds: 0
     },
-    description: "ALTTP randomizer triforce hunt"
+    description: "Transistor"
   }
 ];
 

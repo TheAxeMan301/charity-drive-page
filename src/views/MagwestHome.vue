@@ -7,7 +7,7 @@
       <b-embed
         type="iframe"
         aspect="16by9"
-        src="https://player.twitch.tv/?channel=dwangoac"
+        src="https://player.twitch.tv/?channel=magfest2"
         allowfullscreen
       />
     </b-container>
@@ -45,7 +45,6 @@
 <script>
 import Schedule from "../components/schedule";
 import Countdown from "../components/countdown";
-
 export default {
   name: "Home",
   components: {
@@ -73,7 +72,7 @@ main {
   width: 100%;
 }
 .video {
-  margin-bottom: 1em;
+  margin: 1em auto;
 }
 
 .countdown {
