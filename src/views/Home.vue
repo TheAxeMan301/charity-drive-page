@@ -38,19 +38,43 @@
 
     <b-container>
       <p class="explain-text">
-        TASBot is best described as a special R.O.B. robot outfitted with Legos to hold a custom circuit board that
-        can exactly mimic the behavior of a video game controller. TASBot can play games on real video game
-        consoles with superhuman abilities, usually leading to game breaking glitches in front of live audiences.
-        TASBot has a long and storied history that starts with the initial efforts to replay Tool-Assisted
-        Speedruns on physical hardware via a process now called console verification.
+        To define TASBot is a complicated task. What started off as a modified R.O.B. unit outfitted with Legos and a circuit board has evolved into an ever-expanding community. With various interests ranging from Tool-Assisted runs and Software Development, to supporting each other during troubling times and crisis, the TASBot community has become a living enigma.
       </p>
       <p class="explain-text">
-        TASBot was born on 2013-12-22 and is currently hosted by his creator and keeper, dwangoAC. He is on Twitter
-        as <a href="https://twitter.com/MrTASBot">@MrTASBot</a>, tas.bot (which redirects to this page), and on
-        Freenode IRC in #tasbot. He has made appearances at AGDQ 2014, AGDQ 2015, SGDQ 2015, AGDQ 2016, SGDQ
-        2016, and AGDQ 2017 (although the earliest TAS involvement at a GDQ event was organized by DarkKobold
-        during SGDQ 2011). TASBot has also participated in talks at TWiT's The New Screen Savers episode 60,
-        DEF CON 24, and GeekPwn 2016.
+        At its core, TASBot was founded under the idea of creating hardware to exactly mimic the behavior of videogame controllers, and allow playback of pre-recorded inputs on physical hardware for a live audience - usually with game-breaking glitches or other super-human abilities - with incredible results. This method of playing inputs, called Tool-Assisted Speedruns (TAS for short), is called "Console Verification."
+      </p>
+      <p class="explain-text">
+        TASBot and its community also make appearances in other ways outside of the gaming and TAS community, often in interesting ways. Previously, they have been seen  working with WarpWorld to connect their software CrowdControl to a Tesla, enabling viewers of their Twitch stream to control various aspects of the vehicle - including GPS coordinates, radio volume, climate controls, and more - during their drive to RPG Limit Break 2019. They have also been seen working alongside other charities, such as the Bot Bash Charity Brawl, sponsoring Team Offbeat Robotics and their bot Skorpios.
+      </p>
+      <p class="explain-text">
+        As TASBot continues to evolve, so does its community. A growing collaboration is underway to bring forth a new look for their mascot. With several of their members coming together to work on entirely customer PCBs, design work, and even personality quirks for TASBot, the future for the community anything but uncertain - It's Strong. It's Bright. It's Tool-Assisted.
+      </p>
+      <p class="explain-text">
+        The original R.O.B.-based model of TASBot was born on 2013-12-2, and is currently hosted by his creator and keeper, dwangoAC. You can also find him here:
+        <ul>
+          <li>Twitter: <a href="https://twitter.com/MrTASBot">@MrTASBot</a></li>
+          <li>Twitch: <a href="https://www.twitch.tv/dwangoac">@dwangoAC</a></li>
+          <li>Freenode IRC: #tasbot</li>
+        </ul>
+      </p>
+      <p class="explain-text">
+        You can also join the Discord community by going to <a href="https://discord.tas.bot">https://discord.tas.bot</a>
+      </p>
+      <p class="explain-text">
+        Previous appearances:
+        <ul>
+          <li>AGDQ 2014, 2015, 2016, 2017, 2018, 2019, 2020</li>
+          <li>SGDQ 2015, 2016, 2018, 2019</li>
+          <li>GDQx 2018</li>
+          <li>Magwest Go 2019</li>
+          <li>Desert Tesla Charity Drive 2019</li>
+          <li>MAGFest 2019, 2020</li>
+          <li>Thotcon 2017</li>
+          <li>TWiT's The New Screen Savers, episode 60</li>
+          <li>DEF CON 24</li>
+          <li>GeekPwn 2016</li>
+          <li>RPG Limit Break 2019</li>
+        </ul>
       </p>
     </b-container>
   </main>
