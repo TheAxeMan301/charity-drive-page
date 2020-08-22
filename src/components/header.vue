@@ -69,6 +69,18 @@
         >
           <i class="far fa-play-circle" /> GDQVods
         </b-nav-item>
+        <b-nav-item
+          href="https://store.tas.bot"
+          rel="noopener"
+        >
+          <i class="fa fa-shopping-bag" /> Store
+        </b-nav-item>
+        <b-nav-item
+          href="https://runs.tas.bot"
+          rel="noopener"
+        >
+          <i class="fa fa-running" /> Runs
+        </b-nav-item>
         <!-- TODO: Where will donation tracker go when we are live?
         Probably a good idea to put it somewhere besides the header. -->
         <b-nav-item
