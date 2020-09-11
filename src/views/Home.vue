@@ -25,13 +25,13 @@
       />
     </b-container>
     <b-container
-      class="video"
+      class="video col-lg-4"
       v-if="phase === 'no-event'"
     >
       <b-embed
         type="iframe"
         aspect="16by9"
-        src="https://www.youtube.com/embed/CTOUOeec4Qc?rel=0"
+        src="https://www.youtube.com/embed/rha61Y3_Voc?rel=0"
         allowfullscreen
       />
     </b-container>
@@ -64,7 +64,7 @@
         Previous appearances:
         <ul>
           <li>AGDQ 2014, 2015, 2016, 2017, 2018, 2019, 2020</li>
-          <li>SGDQ 2015, 2016, 2018, 2019</li>
+          <li>SGDQ 2015, 2016, 2018, 2019, 2020</li>
           <li>GDQx 2018</li>
           <li>Magwest Go 2019</li>
           <li>Desert Tesla Charity Drive 2019</li>

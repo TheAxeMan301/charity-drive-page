@@ -5,6 +5,12 @@ You will need node.js for development. The recommended version is the latest 10.
 ```
 npm install
 npm install -g @vue/cli # for vue cli - note that this is NOT the same as vue-cli, it is a newer version
+
+# You may also need some packages, the installation of which will vary
+# for different systems. The lines below got me up on WSL Ubuntu.
+sudo apt-get install libglu1
+sudo apt-get install libxi6 libgconf-2-4
+ldconfig
 ```
 
 ### Vue cli
