@@ -1,5 +1,23 @@
 <template>
   <main>
+    <h1>TASGiving</h1>
+
+    <b-container class="tasgiving-container">
+      <b-row>
+        <b-col lg="6" class="tasgiving-banner">
+          <b-img :src="require('../assets/TASGiving2020byCR.png')" fluid/>
+        </b-col>
+        <b-col lg="6" class="tasgiving-text">
+          <p>
+            TASGiving is an online speedrunning marathon running Nov. 27-29, 2020 benefiting <a href="https://nami.org">NAMI (National Alliance on Mental Illness)</a>. The event features commentary infused traditional speedruns, Tool-Assisted Speedruns on emulator and played live on console via TASBot, and video game exhibitions in a GDQ-esque online Twitch livestream.
+          </p>
+          <p>
+            Organized by the TASBot Discord community, the inaugural TASGiving 2020 stands to be a yearly tradition for the forseeable future. Want to get involved? We'd love to have you join us at <a href="https://discord.tas.bot">Discord.TAS.Bot</a>.
+          </p>
+        </b-col>
+      </b-row>
+    </b-container>
+
     <h1>TASBot</h1>
 
     <b-container
@@ -153,6 +171,12 @@ export default {
 main {
   margin: 0 auto 30px auto;
   width: 100%;
+}
+.tasgiving-text {
+  margin-top: 1em;
+}
+.tasgiving-container {
+  margin-bottom: 1em;
 }
 .video {
   margin-bottom: 1em;
