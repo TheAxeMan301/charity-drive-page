@@ -4,15 +4,45 @@
 
     <b-container class="tasgiving-container">
       <b-row>
-        <b-col lg="6" class="tasgiving-banner">
-          <b-img :src="require('../assets/TASGiving2020byCR.png')" fluid/>
+        <b-col
+          lg="6"
+          class="tasgiving-banner"
+        >
+          <a
+            href="https://forms.gle/c3oZJCMdgwjbijC38"
+            target="_blank"
+          >
+            <b-img
+              :src="require('../assets/TASGiving2020byCR.png')"
+              fluid
+            />
+          </a>
         </b-col>
-        <b-col lg="6" class="tasgiving-text">
+        <b-col
+          lg="6"
+          class="tasgiving-text"
+        >
           <p>
-            TASGiving is an online speedrunning marathon running Nov. 27-29, 2020 benefiting <a href="https://nami.org">NAMI (National Alliance on Mental Illness)</a>. The event features commentary infused traditional speedruns, Tool-Assisted Speedruns on emulator and played live on console via TASBot, and video game exhibitions in a GDQ-esque online Twitch livestream.
+            TASGiving is an online speedrunning marathon running Nov. 27-29, 2020 benefiting <a
+              href="https://nami.org"
+              target="_blank"
+            >NAMI (National Alliance on Mental Illness)</a>. The event features commentary infused traditional speedruns, Tool-Assisted Speedruns on emulator and played live on console via TASBot, and video game exhibitions in a GDQ-esque online Twitch livestream.
           </p>
           <p>
             Organized by the TASBot Discord community, the inaugural TASGiving 2020 stands to be a yearly tradition for the forseeable future. Want to get involved? We'd love to have you join us at <a href="https://discord.tas.bot">Discord.TAS.Bot</a>.
+          </p>
+          <p>
+            Submit a tool-assisted or real-time speedrun for the event by filling out
+            <a
+              href="https://forms.gle/c3oZJCMdgwjbijC38"
+              target="_blank"
+            >the submission form</a>.
+            Send in
+            <a
+              href="https://forms.gle/mUAaDpyHHY6trECs8"
+              target="_blank"
+            >the volunteer form</a>
+            to help with hosting, media or streaming tech.
           </p>
         </b-col>
       </b-row>
