@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <!-- <b-button
+    <b-button
       pill
       variant="outline-secondary"
       class="light-mode-toggle"
@@ -8,7 +8,7 @@
     >
       <span v-if="darkMode">Light mode</span>
       <span v-else>Dark mode</span>
-    </b-button> -->
+    </b-button>
     <app-header :phase="phase" />
     <router-view :phase="phase" class="main-view" />
   </div>
@@ -86,8 +86,7 @@ body {
   margin: 0;
   padding: 0;
   color: #303030;
-  // background: rgb(34, 34, 34);
-  background: #eee;
+  background: rgb(34, 34, 34);
 }
 
 body::after {
@@ -100,7 +99,7 @@ body::after {
   right: 0;
   position: fixed;
   z-index: -1;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 .lightMode {
   background: #eee;
