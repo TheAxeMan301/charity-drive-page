@@ -1,5 +1,6 @@
 <template>
-  <table>
+  <span>To be announced!</span>
+  <!-- <table>
     <tr v-for="row in rowData" :key="row.start">
       <td class="start-time text-right">
         {{ row.start }}
@@ -8,7 +9,7 @@
         {{ row.description }}
       </td>
     </tr>
-  </table>
+  </table> -->
 </template>
 
 <script>

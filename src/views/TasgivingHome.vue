@@ -7,7 +7,7 @@
       <b-embed
         type="iframe"
         aspect="16by9"
-        src="https://player.twitch.tv/?channel=magfest2"
+        src="https://player.twitch.tv/?channel=dwangoac"
         allowfullscreen
       />
     </b-container>
@@ -16,12 +16,18 @@
         <b-col md="6">
           <b-card class="benefiting-card" text-variant="white">
             <b-card-title class="text-center">
-              Benefiting Child's Play
+              Benefiting
+              <a href="https://www.nami.org/" target="_blank" rel="noopener"
+                >NAMI</a
+              >
             </b-card-title>
-            Child's Play is dedicated to improving the lives of children in
-            hospitals and domestic abuse shelters around the world through the
-            kindness and generosity of the video game community and the power of
-            play.
+            NAMI, the National Alliance on Mental Illness, is the nation's
+            largest grassroots mental health organization dedicated to building
+            better lives for the millions of Americans affected by mental
+            illness.
+            <a href="https://www.nami.org/" target="_blank" rel="noopener">
+              <img src="../assets/nami-logo-carousel.png" class="nami-logo" />
+            </a>
           </b-card>
         </b-col>
         <b-col md="6">
@@ -29,11 +35,11 @@
             <b-card-title class="text-center">
               Schedule
             </b-card-title>
-            <small
+            <!-- <small
               >Times converted to your local timezone ({{
                 Intl.DateTimeFormat().resolvedOptions().timeZone
               }})
-            </small>
+            </small> -->
             <Schedule />
           </b-card>
         </b-col>
@@ -103,7 +109,7 @@ img.childsplay-controller {
 }
 .benefiting-card::after {
   content: "";
-  background-image: url("../assets/logo-childs-play.png");
+  // background-image: url("../assets/nami-logo-carousel.png");
   background-size: 65px;
   display: inline-block;
   position: absolute;
@@ -112,6 +118,11 @@ img.childsplay-controller {
   height: 60px;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+.nami-logo {
+  display: block;
+  width: 70%;
+  margin: 2em auto;
 }
 .schedule-card {
   h4 {

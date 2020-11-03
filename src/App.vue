@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <b-button
+    <!-- <b-button
       pill
       variant="outline-secondary"
       class="light-mode-toggle"
@@ -8,7 +8,7 @@
     >
       <span v-if="darkMode">Light mode</span>
       <span v-else>Dark mode</span>
-    </b-button>
+    </b-button> -->
     <app-header :phase="phase" />
     <router-view :phase="phase" class="main-view" />
   </div>
@@ -17,7 +17,7 @@
 <script>
 import Header from "./components/header";
 
-const timerTarget = new Date("14 Sept 2019 12:00:00 PDT");
+const timerTarget = new Date("27 Nov 2020 12:00:00 PDT");
 const eaList = [
   "ArrowUp",
   "ArrowUp",
@@ -86,7 +86,8 @@ body {
   margin: 0;
   padding: 0;
   color: #303030;
-  background: #222;
+  // background: rgb(34, 34, 34);
+  background: #eee;
 }
 
 body::after {
@@ -99,6 +100,7 @@ body::after {
   right: 0;
   position: fixed;
   z-index: -1;
+  opacity: 0.05;
 }
 .lightMode {
   background: #eee;

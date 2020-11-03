@@ -18,7 +18,7 @@
 function leadingZero(number) {
   return ("0" + number).slice(-2);
 }
-const timerTarget = new Date("14 Sept 2019 12:00:00 PDT");
+const timerTarget = new Date("27 Nov 2020 12:00:00 PDT");
 
 export default {
   name: "Countdown",

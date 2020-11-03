@@ -1,5 +1,5 @@
 import VueRouter from "vue-router";
-import Home from "./views/MagwestHome";
+import Home from "./views/TasgivingHome";
 
 export default new VueRouter({
   mode: "history",

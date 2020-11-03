@@ -2,15 +2,7 @@
   <header>
     <b-container>
       <b-row>
-        <b-col md="12" lg="4" class="logo-container">
-          <img
-            class="magwestgo-logo"
-            src="../assets/magwest.png"
-            alt="Logo of MAGWest Go!"
-          />
-        </b-col>
-
-        <b-col lg="8">
+        <b-col lg="12">
           <b-navbar toggleable="md" type="dark" class="whole-nav">
             <b-navbar-toggle target="nav-text-collapse">
               <b-navbar-toggle target="nav-text-collapse" disabled /> Links
@@ -18,20 +10,20 @@
             <b-collapse id="nav-text-collapse" is-nav>
               <b-navbar-nav class="top-navbar-nav">
                 <b-nav-item
-                  href="https://go.magwest.org"
+                  href="https://tasgiving.org"
                   target="_blank"
                   rel="noopener"
                 >
                   Home
                 </b-nav-item>
                 <b-nav-item
-                  href="https://www.magwest.org/"
+                  href="https://www.nami.org/"
                   target="_blank"
                   rel="noopener"
                 >
-                  MAGWest
+                  NAMI
                 </b-nav-item>
-                <b-nav-item
+                <!-- <b-nav-item
                   href="https://tracker.tasbot.net/tracker/runs/MWG2019"
                   target="_blank"
                   rel="noopener"
@@ -47,39 +39,48 @@
                 <b-nav-item
                   v-if="phase === 'live'"
                   href="https://tracker.tasbot.net/tracker/index/MWG2019"
-                  >Donation tracker</b-nav-item
                 >
+                  Donation tracker
+                </b-nav-item> -->
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
         </b-col>
       </b-row>
       <b-row>
+        <b-col lg="12" class="logo-container">
+          <img
+            class="tasgiving-logo"
+            src="../assets/logo-cutout.png"
+            alt="Logo of TASGiving"
+          />
+        </b-col>
+      </b-row>
+      <b-row>
         <b-col>
-          <h1>MAGWest Go!</h1>
+          <h1>TASGiving</h1>
           <span
-            >MAGWests's charity marathon is here! It's 8 hours of speed runs,
+            >TASBot's charity marathon is here! It's 2 days of speed runs,
             TAS'es, randomizer races, and maybe even a few surprises. All
-            donations, subscription, and bit proceeds will benefit Child's Play
-            of Redmond, WA.</span
+            donations, subscription, and bit proceeds will benefit NAMI.</span
           ><br />
           <span
-            >September 14. Live on
-            <a href="https://twitch.tv/magfest2">twitch.tv/magfest2</a></span
+            >November 27-29th. Live on
+            <a href="https://twitch.tv/dwangoac">twitch.tv/dwangoac</a></span
           >
         </b-col>
       </b-row>
-      <b-row v-if="phase === 'live'">
-        <b-col
-          ><b-button
+      <!-- <b-row v-if="phase === 'live'">
+        <b-col>
+          <b-button
             pill
             variant="danger"
             block
             href="https://tracker.tasbot.net/tracker/donate/MWG2019"
             >Donate now!</b-button
-          ></b-col
-        >
-      </b-row>
+          >
+        </b-col>
+      </b-row> -->
     </b-container>
   </header>
 </template>
@@ -98,8 +99,8 @@ export default {
 
 <style scoped lang="scss">
 header {
-  background-color: #4aabd3;
-  background: linear-gradient(#79c7ed, #4aabd3);
+  background-color: #ff742a;
+  background: linear-gradient(#ff8746, #ff742a);
   color: #eee;
   padding-bottom: 1em;
   h1,
@@ -126,11 +127,10 @@ header {
 .logo-container {
   display: flex;
   margin-top: 1em;
-  margin-bottom: -1em;
-  @media (max-width: 992px) {
-    justify-content: center;
-    margin-bottom: 0;
-  }
+  justify-content: center;
+}
+.tasgiving-logo {
+  height: 200px;
 }
 nav.navbar.whole-nav {
   text-transform: uppercase;
