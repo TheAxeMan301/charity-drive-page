@@ -35,11 +35,11 @@
             <b-card-title class="text-center">
               Schedule
             </b-card-title>
-            <!-- <small
+            <small
               >Times converted to your local timezone ({{
                 Intl.DateTimeFormat().resolvedOptions().timeZone
               }})
-            </small> -->
+            </small>
             <Schedule />
           </b-card>
         </b-col>

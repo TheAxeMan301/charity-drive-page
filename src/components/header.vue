@@ -23,14 +23,14 @@
                 >
                   NAMI
                 </b-nav-item>
-                <!-- <b-nav-item
-                  href="https://tracker.tasbot.net/tracker/runs/MWG2019"
+                <b-nav-item
+                  href="https://horaro.org/tasgiving2020/schedule"
                   target="_blank"
                   rel="noopener"
                 >
                   Schedule
                 </b-nav-item>
-                <b-nav-item
+                <!-- <b-nav-item
                   v-if="phase === 'live'"
                   href="https://tracker.tasbot.net/tracker/donate/MWG2019"
                 >

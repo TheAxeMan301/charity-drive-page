@@ -38,12 +38,16 @@ export default {
   },
   data() {
     return {
-      darkMode: true,
+      darkMode: false,
       phase: "hype"
     };
   },
   created() {
     this.checkTimer();
+
+    this.darkMode = !this.darkMode; // Invert before toggling so that the setting above actually matches
+    this.toggleTheme();
+
     this.timeUpdateInterval = setInterval(() => {
       this.checkTimer();
     }, 1000);
@@ -68,8 +72,12 @@ export default {
       }
     },
     toggleTheme() {
-      document.body.classList.toggle("lightMode");
       this.darkMode = !this.darkMode;
+      if (this.darkMode) {
+        document.body.classList.remove("lightMode");
+      } else {
+        document.body.classList.add("lightMode");
+      }
     }
   }
 };

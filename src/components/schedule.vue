@@ -1,87 +1,35 @@
 <template>
-  <span>To be announced!</span>
-  <!-- <table>
-    <tr v-for="row in rowData" :key="row.start">
-      <td class="start-time text-right">
-        {{ row.start }}
-      </td>
-      <td class="text-left">
-        {{ row.description }}
-      </td>
-    </tr>
-  </table> -->
+  <table>
+    <template v-for="(day, offset) in scheduleData">
+      <tr :key="offset" class="day">
+        <td></td>
+        <td>{{ formdatDay(offset) }}</td>
+      </tr>
+      <tr v-for="row in day" :key="row.start">
+        <td class="start-time text-right">
+          {{ row.start }}
+        </td>
+        <td class="text-left description">
+          {{ row.description }}
+        </td>
+      </tr>
+    </template>
+  </table>
 </template>
 
 <script>
-let startTime = new Date("14 Sept 2019 12:00:00 PDT");
-let scheduleData = [
-  {
-    length: {
-      hours: 0,
-      minutes: 45,
-      seconds: 0
-    },
-    description: "Ecco 2 any%"
-  },
-  {
-    length: {
-      hours: 1,
-      minutes: 30,
-      seconds: 0
-    },
-    description: "The Stanley Parable 12 endings"
-  },
-  {
-    length: {
-      hours: 2,
-      minutes: 30,
-      seconds: 0
-    },
-    description: "Crystallis rando any%"
-  },
-  {
-    length: {
-      hours: 1,
-      minutes: 30,
-      seconds: 0
-    },
-    description: "The Legend of Zelda: ALTTP randomizer race"
-  },
-  {
-    length: {
-      hours: 1,
-      minutes: 0,
-      seconds: 0
-    },
-    description: "Transistor"
-  }
-];
-
+import rawSchedule from "../assets/schedule.json";
 export default {
   name: "Schedule",
   components: {},
   data() {
     return {
-      scheduleData
+      startDate: new Date(),
+      scheduleData: []
     };
   },
-  computed: {
-    rowData() {
-      let data = [];
-      for (let run of scheduleData) {
-        data.push({
-          start: this.formatDate(startTime),
-          description: run.description
-        });
-        const add = run.length;
-        const addMs =
-          add.hours * 60 * 60 * 1000 +
-          add.minutes * 60 * 1000 +
-          add.seconds * 1000;
-        startTime = new Date(startTime.getTime() + addMs);
-      }
-      return data;
-    }
+  created() {
+    this.parsSchedule();
   },
   methods: {
     formatDate(date) {
@@ -94,6 +42,30 @@ export default {
       if (PM) hours -= 12;
       if (hours == 0) hours = 12;
       return `${hours}:${minutes} ${PM ? "pm" : "am"}`;
+    },
+    formdatDay(offset) {
+      let date = new Date(this.startDate);
+      date.setDate(date.getDate() + offset);
+      const options = { weekday: "long", month: "long", day: "numeric" };
+      return date.toLocaleDateString("en-US", options);
+    },
+    parsSchedule() {
+      this.startDate = new Date(Date.parse(rawSchedule.data.start));
+      let curDay = this.startDate.getDay();
+      let dayIdx = 0;
+      this.scheduleData.push([]);
+      for (const item of rawSchedule.data.items) {
+        const nextDay = new Date(Date.parse(item.scheduled)).getDay();
+        if (nextDay != curDay) {
+          this.scheduleData.push([]);
+          dayIdx++;
+          curDay = nextDay;
+        }
+        this.scheduleData[dayIdx].push({
+          start: this.formatDate(new Date(Date.parse(item.scheduled))),
+          description: item.data[0]
+        });
+      }
     }
   }
 };
@@ -102,5 +74,17 @@ export default {
 <style scoped lang="scss">
 td.start-time {
   padding-right: 10px;
+  padding-bottom: 10px;
+  width: 20%;
+}
+td.description {
+  padding-bottom: 10px;
+}
+tr.day {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+tr.day td {
+  padding-top: 1em;
 }
 </style>
