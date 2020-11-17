@@ -60,7 +60,7 @@
         <b-col>
           <h1>TASGiving</h1>
           <span
-            >TASBot's charity marathon is here! It's 2 days of speed runs,
+            >TASBot's charity marathon is here! It's 2 days of speedruns,
             TAS'es, randomizer races, and maybe even a few surprises. All
             donations, subscription, and bit proceeds will benefit NAMI.</span
           ><br />
