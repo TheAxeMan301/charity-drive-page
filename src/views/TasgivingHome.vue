@@ -7,7 +7,7 @@
       <b-embed
         type="iframe"
         aspect="16by9"
-        src="https://player.twitch.tv/?channel=dwangoac"
+        src="https://player.twitch.tv/?channel=dwangoac&parent=tasgiving.org"
         allowfullscreen
       />
     </b-container>
