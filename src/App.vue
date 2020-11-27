@@ -17,7 +17,7 @@
 <script>
 import Header from "./components/header";
 
-const timerTarget = new Date("27 Nov 2020 12:00:00 PDT");
+const timerTarget = new Date("27 Nov 2020 12:00:00 PST");
 const eaList = [
   "ArrowUp",
   "ArrowUp",
