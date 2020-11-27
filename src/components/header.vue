@@ -30,18 +30,18 @@
                 >
                   Schedule
                 </b-nav-item>
-                <!-- <b-nav-item
+                <b-nav-item
                   v-if="phase === 'live'"
-                  href="https://tracker.tasbot.net/tracker/donate/MWG2019"
+                  href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020"
                 >
                   Donate
                 </b-nav-item>
                 <b-nav-item
                   v-if="phase === 'live'"
-                  href="https://tracker.tasbot.net/tracker/index/MWG2019"
+                  href="https://tracker.tasbot.net/tracker/event/TASGiving2020"
                 >
                   Donation tracker
-                </b-nav-item> -->
+                </b-nav-item>
               </b-navbar-nav>
             </b-collapse>
           </b-navbar>
@@ -60,7 +60,7 @@
         <b-col>
           <h1>TASGiving</h1>
           <span
-            >TASBot's charity marathon is here! It's 2 days of speedruns,
+            >TASBot's charity marathon is here! It's 3 days of speedruns,
             TAS'es, randomizer races, and maybe even a few surprises. All
             donations, subscription, and bit proceeds will benefit NAMI.</span
           ><br />
@@ -70,17 +70,17 @@
           >
         </b-col>
       </b-row>
-      <!-- <b-row v-if="phase === 'live'">
+      <b-row v-if="phase === 'live'">
         <b-col>
           <b-button
             pill
             variant="danger"
             block
-            href="https://tracker.tasbot.net/tracker/donate/MWG2019"
+            href="https://tracker.tasbot.net/tracker/ui/donate/TASGiving2020  "
             >Donate now!</b-button
           >
         </b-col>
-      </b-row> -->
+      </b-row>
     </b-container>
   </header>
 </template>
